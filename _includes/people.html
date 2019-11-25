@@ -17,16 +17,13 @@
 
             <!-- Generate link or div -->
             {% for person in type.members %}
-            {% if person.link %}
-              <a target="_blank" href="{{ person.link }}" class="d-block col-sm-3 col-xs-4">
-            {% else %}
               <div class="col-sm-3 col-4 px-1">
-            {% endif %}
 
                 <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
-                <h4 class="my-2">{{ person.name }}</h4>
 
-            {% if person.link %} </a> {% else %} </div> {% endif %}
+                <h4 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h4>
+              </div>
+
             {% endfor %}
         </div>
         {% endfor %}

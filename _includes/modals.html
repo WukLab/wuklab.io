@@ -11,15 +11,17 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-lg">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
 
                             <!-- insert HTML content here -->
+                            <div class="included-html container">
                             {{ post.content }}
+                            </div>
 
                         </div>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>

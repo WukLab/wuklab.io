@@ -1,0 +1,150 @@
+---
+layout: default
+modal-id: 3
+date: 2014-07-16
+img: 3dxpoint.jpg
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+summary: Non-volatile main memories (NVMMs) promise DRAM-like performance, persistence, and high density. Taking full advantage of the benefits of NVMMs will require changes in system software. We investigate various problems in using NVMMs in different systems.
+---
+
+<div class="row-fluid">
+    <div class="col-md-12">
+        <p>
+        Fast, non-volatile memory technologies such as phase change memory (PCM),
+        spin-transfer torque magnetic memories (STTMs), and the memristor are poised to radically
+        alter the performance landscape for storage systems.  They will blur the line
+        between storage and memory, forcing designers to rethink how volatile and
+        non-volatile data interact and how to manage NVM as reliable storage.
+        </p>
+        <p>
+        Attaching NVMs directly to processors will produce non-volatile main memories (NVMMs), exposing
+        the performance, flexibility, and persistence of these memories to applications.
+        However, taking full advantage of these benefits of NVMMs will require changes in system software.
+
+        </p>
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <h3 class="w-100">Disaggregated Persistent Memory</h3>
+    <div class="col-md-6">
+        <p>
+        One viable approach to deploy persistent memory (PM) in datacenters 
+        is to attach PM as self-contained devices to the network as disaggregated
+        persistent memory, or <b>DPM</b>. DPM requires no changes
+        to existing servers in datacenters; without the need to
+        include a processor, DPM devices are cheap to build;
+        and by sharing DPM across compute servers, they offer
+        great elasticity and efficient resource packing.
+        </p>
+    </div>
+
+    <div class="col-md-5">
+        <img src="img/research/DPM.jpg" class="img-fluid">
+    </div>
+
+    <div class="w-100">
+        <p>
+        We propose three architectures of DPM: 1) compute nodes
+        directly access DPM (DPM-Direct); 2) compute nodes
+        send requests to a coordinator server, which then accesses
+        DPM to complete a request (DPM-Central); and
+        3) compute nodes directly access DPM for data operations
+        and communicate with a global metadata server for
+        the control plane (DPM-Sep). Based on these architectures,
+        we built three atomic, crash-consistent data stores.
+        </p>
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <h3 class="w-100">Distributed Shared Persistent Memory</h3>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-3 offset1">
+                <p>
+                <img width="120" src="img/research/hotpot-logo.jpg">
+                </p>
+            </div>
+            <div class="col-md-8">
+                <p class="text-left">
+                NVMs have the potential to greatly
+                improve the performance and reliability of large-scale
+                applications in datacenters.
+                However, it is still unclear how to best utilize them
+                in distributed, datacenter environments.
+                </p>
+            </div>
+        </div>
+        <p>
+        We introduce Distributed Shared Persistent Memory
+        (DSPM), a new framework for using persistent memories
+        in distributed datacenter environments. DSPM provides
+        a new abstraction that allows applications to both perform
+        traditional memory load and store instructions and
+        to name, share, and persist their data. We built <strong>Hotpot</strong>,
+        a kernel-level DSPM system that provides low-latency,
+        transparent memory accesses, data persistence, data reliability,
+        and high availability.
+        </p>
+        <p>
+        <strong>Get Hotpot <a target="_blank" href="https://github.com/WukLab/Hotpot">here</a>.</strong>
+        </p>
+    </div>
+    <div class="col-md-5">
+        <img height="150" src="img/research/hotpot.jpg">
+    </div>
+</div>
+
+<hr/>
+
+<div class="row">
+    <h3>Reliable and Highly-Available NVMM</h3>
+    <div class="w-100">
+        <img class="float-right m-2" height="200" src="img/research/Mojim_achitecture.jpg">
+        <p>
+        NVMM would be especially useful in large-scale data center environments,
+        where reliability and availability are critical.
+        However, providing reliability and availability to NVMM is challenging,
+        since the latency of data replication can squander the low latency that NVMM can provide.
+        </p>
+        <p>
+        <strong>Mojim</strong> is a system that provides the reliability and availability that large-scale storage systems require,
+        while preserving the performance of NVMM.
+        Mojim achieves these goals by using a two-tier architecture in which the primary tier contains
+        a mirrored pair of nodes
+        and the secondary tier contains one or more secondary backup nodes with weakly consistent copies of data.
+        Mojim uses highly-optimized replication protocols, software, and networking stacks.
+        Our evaluation results show that surprisingly Mojim provides replicated NVMM with similar or even better performance than un-replicated NVMM
+        (reducing latency by 27% to 63% and delivering between 0.4 and 2.7X the throughput).
+        Mojim also outperforms MongoDB's replication system by 3.4 to 4X.
+        </p>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <h3>Application Performance Study with NVMM</h3>
+    <div class="w-100">
+        <img class="img-fluid  float-right" height="200" src="img/research/pmep_architecture.jpg">
+        <p>
+        We conduct a study of storage application performance with NVMM using a hardware NVMM emulator that allows fine-grain tuning of NVMM performance parameters. 
+        Our evaluation results show that NVMM improves storage application performance significantly over flash-based SSDs and HDDs. 
+        When comparing realistic NVMM to idealized NVMM with the same performance as DRAM, we find that although NVMM is projected to have higher latency and lower bandwidth than DRAM, 
+        these difference have only a modest impact on application performance. 
+        A much larger drag on NVMM performance is the cost of ensuring data resides safely in the NVMM (rather than the volatile caches) so that applications can make strong guarantees about persistence and consistency. 
+        In response, we propose an optimized approach to flushing data from CPU caches that minimizes this cost. 
+        Our evaluation shows that this technique significantly improves performance for applications that require strict durability and consistency guarantees over large regions of memory.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+---
+layout: default
+modal-id: 4
+date: 2014-07-15
+img: security.jpg
+alt: image-alt
+project-date: April 2014
+summary: Building secure systems is hard but extremely important. To improve systems security, we are exploring both security attacks and defenses in various environments. Our current focus in systems security research is on hardware and networking security.
+---
+
+<div class="row-fluid">
+          <h2>Systems Secruity</h2>
+        	<p>
+
+Building secure systems is hard but extremely important.
+To improve systems security, we are exploring both security attacks and defenses in various environments.
+Our current focus in systems security research is on hardware and networking security.
+	  </p>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>RDMA Side-Channel Attack</h3>
+          <div class="span6">
+        	<p class="text-left">
+RDMA is a technology
+that allows direct access from the network to a
+machine’s main memory without involving its CPU.
+While RDMA provides massive
+performance boosts and has thus been adopted by
+several major cloud providers, security concerns have
+so far been neglected.
+</p>
+<p>
+The need for RDMA NICs to bypass CPU and directly
+access memory result in them storing various metadata
+like page table entries in their on-board SRAM. When
+the SRAM is full, RNICs swap metadata to main memory
+across the PCIe bus. We exploited the resulting timing
+difference to establish side channels and demonstrated
+that these side channels can leak access patterns of victim
+nodes to other nodes.
+</p>
+<p>
+<b>Pythia</b> is a set of RDMA-based remote sidechannel
+attacks that allow an attacker on one machine to
+learn how victims on other machines access the server’s
+exported in-memory data. We reverse engineered the memory
+architecture of the most widely used RDMA NIC
+and use this knowledge to improve the efficiency of
+Pythia. We further extended Pythia to build side-channel
+attacks on Crail, a real RDMA-based key-value store application.
+<!--We evaluated Pythia on four different RDMA
+NICs both in a laboratory and in a public cloud setting.-->
+Pythia is fast (57μs), accurate (97% accuracy), and can
+hide all its traces from the victim or the server.
+		</p>
+	  </div>
+          <div class="span4">
+<img height="150" src="img/research/Pythia.jpg">
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Security Implications of One-Sided Communication</h3>
+          <div class="span6">
+        	<p class="text-left">
+One-sided network communication technologies such as RDMA, Gen-Z, 
+and NVMe-over-Fabrics are quickly gaining adoption in production software and datacenters. 
+Although appealing for their low CPU utilization and good performance, 
+they raise new security concerns that have never been looked into before. 
+</p>
+<p>
+We identified various security implications of one-sided communication. 
+In addition to security threats, 
+we further discover opportunities of leveraging one-sided communication to enhance security, 
+showing that one-sided communication is indeed a double-edged sword in security.
+		</p>
+	  </div>
+<!--
+          <div class="span5">
+<img height="150" src="img/research/">
+	  </div>
+-->
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Cloud for Safe IoT File Systems</h3>
+          <div class="span6">
+        	<p class="text-left">
+Smart devices produce security-sensitive data and keep them in on-device storage for persistence. The current storage stack on smart devices, however, offers weak security guarantees: not only because the stack depends on a vulnerable commodity OS, but also because smart device deployment is known weak on security measures. 
+</p>
+<p>
+To safeguard such data on smart devices, we present a novel storage stack architecture that i) protects file data in a trusted execution environment (TEE); ii) outsources file system logic and metadata out of TEE; iii) running a metadata-only file system replica in the cloud for continuously verifying the on-device file system behaviors. To realize the architecture, we build Overwatch, aTrustZone-based storage stack. Overwatch addresses unique challenges including discerning metadata at fine grains, hiding network delays, and coping with cloud disconnection. On a suite of three real-world applications, Overwatch shows moderate security overheads.
+		</p>
+	  </div>
+<!--
+          <div class="span5">
+<img height="150" src="img/research/LITE-architecture.jpg">
+	  </div>
+-->
+	</div>
+

@@ -1,0 +1,159 @@
+---
+layout: default
+modal-id: 2
+date: 2014-07-17
+img: WukLab_IB_switch.jpg
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+summary: Advance in datacenter networking in the past decade has driven a sea change in the way datacenters are organized and managed. We are exploring various datacenter networking issues from the systems perspective. Currently, we are interested in low-latency, RDMA-based network systems.
+---
+
+<div class="row-fluid">
+          <h2>Datacenter Networking</h2>
+        	<p>
+Advance in datacenter networking in the past decade has driven a sea change in the way datacenters are organized and managed.
+We are exploring various datacenter networking issues from the systems perspective.
+Currently, we are interested in low-latency, RDMA-based network systems.
+	  </p>
+</p>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Network for Resource Disaggregation</h3>
+          <div class="span6">
+        	<p class="text-left">
+The need to access remote resources and to access them fast demands a new network system for future disaggregated datacenters.
+We are building <b>LegoNET</b>, a new network system designed for adding disaggregated resources to 
+existing datacenters in a non-disruptive way, while delivering low-latency, high-throughput performance 
+and a flexible, easy-to-use interface.
+		</p>
+	  </div>
+<!--
+          <div class="span5">
+<img height="150" src="img/research/">
+	  </div>
+-->
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>RDMA Side-Channel Attack</h3>
+          <div class="span6">
+        	<p class="text-left">
+RDMA is a technology
+that allows direct access from the network to a
+machine’s main memory without involving its CPU.
+While RDMA provides massive
+performance boosts and has thus been adopted by
+several major cloud providers, security concerns have
+so far been neglected.
+</p>
+<p>
+The need for RDMA NICs to bypass CPU and directly
+access memory result in them storing various metadata
+like page table entries in their on-board SRAM. When
+the SRAM is full, RNICs swap metadata to main memory
+across the PCIe bus. We exploited the resulting timing
+difference to establish side channels and demonstrated
+that these side channels can leak access patterns of victim
+nodes to other nodes.
+</p>
+<p>
+<b>Pythia</b> is a set of RDMA-based remote sidechannel
+attacks that allow an attacker on one machine to
+learn how victims on other machines access the server’s
+exported in-memory data. We reverse engineered the memory
+architecture of the most widely used RDMA NIC
+and use this knowledge to improve the efficiency of
+Pythia. We further extended Pythia to build side-channel
+attacks on Crail, a real RDMA-based key-value store application.
+<!--We evaluated Pythia on four different RDMA
+NICs both in a laboratory and in a public cloud setting.-->
+Pythia is fast (57μs), accurate (97% accuracy), and can
+hide all its traces from the victim or the server.
+		</p>
+	  </div>
+          <div class="span4">
+<img height="150" src="img/research/Pythia.jpg">
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Datacenter Approximate Tranmission Protocol</h3>
+          <div class="span6">
+        	<p class="text-left">
+Many datacenter applications such as machine learning
+and streaming systems do not need the complete set of
+data to perform their computation. Current approximate
+applications in datacenters run on a reliable network
+layer like TCP and either sample data before sending or 
+drop data after receiving to improve performance. 
+These approaches are network oblivious and 
+transmit (and retransmit) more data than necessary, 
+affecting both application
+runtime and network bandwidth usage. 
+<!--
+Running approximate
+application on a lossy network with UDP cannot
+guarantee the accuracy of application computation.
+-->
+</p>
+<p>
+We propose to run approximate applications on a lossy
+network and to allow packet loss in a controlled manner.
+We designed a new network protocol
+called Approximate Transmission Protocol, or <strong>ATP</strong>, 
+for datacenter approximate applications. ATP opportunistically
+exploits available network bandwidth as much as
+possible, while performing a loss-based rate control algorithm
+to avoid bandwidth waste and retransmission.
+It also ensures bandwidth fair sharing across flows and
+improves accurate applications’ performance by leaving
+more switch buffer space to accurate flows. 
+		</p>
+	  </div>
+<!--
+          <div class="span5">
+<img height="150" src="img/research/">
+	  </div>
+-->
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Kernel-Level Indirection Layer for RDMA</h3>
+          <div class="span6">
+        	<p class="text-left">
+Recently, there is an increasing interest in building datacenter
+applications with RDMA because of its low-latency,
+high-throughput, and low-CPU-utilization benefits. However,
+RDMAis not readily suitable for datacenter applications.
+It lacks a flexible, high-level abstraction; its performance
+does not scale; and it does not provide resource sharing or
+flexible protection. Because of these issues, it is difficult to
+build RDMA-based applications and to exploit RDMA’s performance
+benefits.
+</p>
+<p>
+To solve these issues, we built <strong>LITE</strong>, a Local Indirection
+TiEr for RDMA in the Linux kernel that virtualizes native
+RDMA into a flexible, high-level, easy-to-use abstraction
+and allows applications to safely share resources. Despite
+the widely-held belief that kernel bypassing is essential to
+RDMA’s low-latency performance, we show that using a
+kernel-level indirection can achieve both flexibility and lowlatency,
+scalable performance at the same time. 
+		</p>
+	  </div>
+          <div class="span5">
+<img height="150" src="img/research/LITE-architecture.jpg">
+	  </div>
+	</div>
