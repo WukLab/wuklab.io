@@ -13,10 +13,16 @@
         <div class="row">
             <h3 class="col-xs-12">{{ type.name }}</h3>
             {% for person in type.members %}
-            <a href="{{ person.link }}" class="d-block col-sm-3 col-xs-4">
+            {% if person.link %}
+              <a target="_blank" href="{{ person.link }}" class="d-block col-sm-3 col-xs-4">
+            {% else %}
+              <div class="col-sm-3 col-xs-4">
+            {% endif %}
+
                 <img class="img-responsive" src="{{ person.imageFile | prepend: 'img/member/' }}">
                 <h4>{{ person.name }}</h4>
-            </a>
+
+            {% if person.link %} </a> {% else %} </div> {% endif %}
             {% endfor %}
         </div>
         {% endfor %}
