@@ -1,3 +1,9 @@
+/* editor files */
+*.swp
+
+/* MacOS files */
+DS_Store
+
 _site
 .sass-cache
 .jekyll-metadata

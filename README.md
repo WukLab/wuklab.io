@@ -35,3 +35,10 @@ _post: our research section
 _include/css/main.css: css global file
 
 More guide to be added.
+
+## Image processing 
+
+resize and crop
+```
+mogrify -resize "2108x2811^" -gravity Center -crop 2108x2811 *.jpg
+```
