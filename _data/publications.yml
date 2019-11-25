@@ -1,0 +1,157 @@
+- name: Conferences and Journals
+  entries:
+    - title: This is a title
+      author: ['Yizhou', 'Zhiyuan']
+      link: '#'
+      journal: OSDI
+      misc: This is a fun art!
+
+LearnedOS-OSR19.pdf
+"Learned" Operating Systems
+Yiying Zhang, Yutong Huang
+<b>ACM SIGOPS Operating Systems Review</b> 53(1): 40-45 (2019)</i>
+
+Pythia.pdf
+Pythia: Remote Oracles for the Masses
+Shin-Yeh Tsai, Mathias Payer, Yiying Zhang
+Proceedings of the 28th USENIX Security Symposium (<b>USENIX SEC '19</b>)</i>
+    </p>
+
+    
+https://arxiv.org/abs/1902.02411
+Storm: A Fast Transactional Dataplane for Remote Data Structures
+Stanko Novakovic, Yizhou Shan, Aasheesh Kolli, Michael Cui, Yiying Zhang, Haggai Eran, Liran Liss, Michael Wei, Dan Tsafrir, Marcos Aguilera
+Proceedings of the 12th ACM International Systems and Storage Conference (<b>SYSTOR '19 </b>)</i> (<font color="red"><b>Best Paper Award</b></font>)
+    </p>
+
+    
+GoStudy-ASPLOS19.pdf
+Understanding Real-World Concurrency Bugs in Go
+     Tengfei Tu, Xiaoyu Liu, Linhai Song, Yiying Zhang
+Proceedings of the 24th International Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS '19</b>)</i>
+    </p>
+
+    
+LegoOS-OSDI18.pdf
+LegoOS: A Disaggregated, Distributed OS for Hardware Resource Disaggregation
+Yizhou Shan, Yutong Huang, Yilun Chen, Yiying Zhang
+Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation (<b>OSDI '18</b>)</i> (<font color="red"><b>Best Paper Award</b></font>)
+    </p>
+
+    
+LITE-sosp17.pdf
+LITE Kernel RDMA Support for Datacenter Applications
+Shin-Yeh Tsai, Yiying Zhang
+Proceedings of the 26th ACM Symposium on Operating Systems Principles (<b>SOSP '17</b>)</i>
+    </p>
+
+    
+hotpot-socc17.pdf
+Distributed Shared Persistent Memory
+Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
+Proceedings of the ACM Symposium on Cloud Computing 2017 (<b>SoCC '17</b>)</i>
+    </p>
+
+    
+nvmmstudy-msst15.pdf
+A Study of Application Performance with Non-Volatile Main Memory
+Yiying Zhang, Steven Swanson
+Proceedings of the 31st IEEE Conference on Massive Data Storage (<b>MSST '15</b>)</i>
+    </p>
+
+    
+mojim-asplos15.pdf
+Mojim: A Reliable and Highly-Available Non-Volatile Memory System
+Yiying Zhang,
+Jian Yang, Amirsaman Memaripour, Steven Swanson
+Proceedings of the 20th International Conference on Architectural Support for Programming Languages and Operating Systems (<b>ASPLOS '15</b>)</i>
+    </p>
+
+    <hr>
+    <h4>Workshops, Posters, and Tech Reports</h4> 
+
+    
+one-sided-security.pdf
+A Double-Edged Sword: Security Threats and Opportunities in One-Sided Network Communication
+Shin-Yeh Tsai, Yiying Zhang
+To appear at the 11th USENIX Workshop on Hot Topics in Cloud Computing (<b>HotCloud '19</b>)</i>
+    </p>
+
+    
+
+Challenges in Building and Deploying Disaggregated Persistent Memory
+Yizhou Shan, Yutong Huang, Yiying Zhang
+to appear at the 9th Annual Non-Volatile Memories Workshop (<b>NVMW '19</b>)</i>
+    </p>
+
+    
+
+Building Atomic, Crash-Consistent Data Stores with Disaggregated Persistent Memory
+Shin-Yeh Tsai, Yiying Zhang
+to appear at the 9th Annual Non-Volatile Memories Workshop (<b>NVMW '19</b>)</i>
+    </p>
+
+
+
+Understanding Real-World Concurrency Bugs in Go
+     Tengfei Tu, Xiaoyu Liu, Linhai Song, Yiying Zhang
+Posterr at the 13th USENIX Symposium on Operating Systems Design and Implementation (<b>OSDI '18</b>)</i>
+     </p>
+
+    
+
+Disaggregating Memory with Software-Managed Virtual Cache
+Yizhou Shan, Yiying Zhang
+the 2018 Workshop on Warehouse-scale Memory Systems (<b>WAMS '18</b>)</i> (co-located with ASPLOS '18)
+    </p>
+
+    
+
+MemAlbum: an Object-Based Remote Software Transactional Memory System
+Shin-Yeh Tsai, Yiying Zhang
+the 2018 Workshop on Warehouse-scale Memory Systems (<b>WAMS '18</b>)</i> (co-located with ASPLOS '18)
+    </p>
+
+    
+
+Split Container: Running Containers beyond Physical Machine Boundaries
+Yilun Chen, Yiying Zhang
+the 2018 Workshop on Warehouse-scale Memory Systems (<b>WAMS '18</b>)</i> (co-located with ASPLOS '18)
+    </p>
+
+    
+http://nvmw.ucsd.edu/nvmw18-program/unzip/current/nvmw2018-final19.pdf
+Distributed Shared Persistent Memory
+Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
+the 9th Annual Non-Volatile Memories Workshop (<b>NVMW '18</b>)</i>
+    </p>
+
+
+
+
+Lego: A Distributed, Decomposed OS for Resource Disaggregation
+     Yizhou Shan, Yilun Chen, Yutong Huang, Sumukh Hallymysore, Yiying Zhang
+Poster at the 26th ACM Symposium on Operating Systems Principles (<b>SOSP '17</b>)</i>
+     </p>
+
+
+
+Disaggregated Operating System
+     Yizhou Shan, Sumukh Hallymysore, Yutong Huang, Yilun Chen, Yiying Zhang
+Poster at the ACM Symposium on Cloud Computing 2017 (<b>SoCC '17</b>)</i>
+     </p>
+
+
+http://hpts.ws/papers/2017/lego.pdf
+Disaggregated Operating System
+     Yiying Zhang, Yizhou Shan, Sumukh Hallymysore
+the 17th International Workshop on High Performance Transaction Systems (<b>HPTS '17</b>)</i>
+     </p>
+
+
+FAST16-Rockies.pdf
+Rockies: A Network System for Future Data Center Racks
+     Shin-Yeh Tsai, Linzhe Li, Yiying Zhang
+WIP and Poster at the 14th USENIX Conference on File and Storage Technologies (<b>FAST '16</b>)</i>
+     </p>
+

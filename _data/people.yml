@@ -1,0 +1,24 @@
+- name: Faculty
+  members:
+    - name: Yiying Zhang
+      imageFile: Yiying.jpg
+      link: https://cseweb.ucsd.edu/~yiying/
+
+- name: Ph.D Students
+  members:
+    - name: Yizhou Shan
+      imageFile: Yizhou.jpg
+      link: "#"
+    - name: Zhiyuan Guo
+      imageFile: Zhiyuan.jpg
+      link: "#"
+
+- name: Master Students
+  members:
+    - name: Yutong Huang
+      imageFile: Yutong.jpg
+      link: "#"
+    - name: Xuhao Luo
+      imageFile: Xuhao.jpg
+      link: "#"
+

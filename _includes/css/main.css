@@ -169,7 +169,16 @@ header .intro-text .skills {
 
 .navbar-default,
 .navbar-inverse {
+    background-color: white !important;
     border: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black !important;
+}
+
+.navbar-default .navbar-brand {
+    color: black !important;
 }
 
 section {

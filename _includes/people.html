@@ -1,61 +1,25 @@
- <!-- About Section -->
- <style>
-.ppl-img {
-  width: 15%;
-  margin: left;
-}
-</style>
- 
-    <section class="dark" id="people">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Member</h2>
-                    <hr class="star-light">
-                </div>
+<!-- This sections is about members in wuklab -->
+
+<section class="success" id="people">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Member</h2>
+                <hr class="star-primary">
             </div>
-			
-			<div class="row-fluid">
-				<h3>Faculty</h3> 
-					<div class="col-lg-12" >
-				<a href="https://cseweb.ucsd.edu/~yiying/">
-				<img class="ppl-img" src="img/member/Yiying.jpg"></a>
-				<p>
-				<h4><a href="https://cseweb.ucsd.edu/~yiying/">Yiying Zhang</a></h4>
-					</p>
-				</div>
-			</div>
-			
-			
-            <div class="row-fluid">
-				<h3>Ph.D. Students</h3> 
-					<div class="col-lg-12" >
-				<a href="https://lastweek.github.io">
-				<img class="ppl-img" src="img/member/Yizhou.jpg"></a>
-				<p>
-				<h4><a href="https://lastweek.github.io">Yizhou Shan</a></h4>
-					</p>
-				</div>
-			</div>
-				
-			<div class="row-fluid">
-				<h3>Master Students</h3> 
-				<div class="col-lg-12" >
-				<a href="">
-				<img class="ppl-img" src="img/member/Yutong.jpg"></a>
-				<p>
-				<h4><a href="">Yutong Huang</a></h4>
-				</p>
-				</div>
-				<div class="col-lg-12" >
-				<a href="">
-				<img class="ppl-img" src="img/member/Xuhao.jpg"></a>
-				<p>
-				<h4><a href="">Xuhao Luo</a></h4>
-				</p>
-				</div>
-			</div>
-	
-	
         </div>
-    </section>
+
+        {% for type in site.data.people %}
+        <div class="row">
+            <h3 class="col-xs-12">{{ type.name }}</h3>
+            {% for person in type.members %}
+            <a href="{{ person.link }}" class="d-block col-sm-3 col-xs-4">
+                <img class="img-responsive" src="{{ person.imageFile | prepend: 'img/member/' }}">
+                <h4>{{ person.name }}</h4>
+            </a>
+            {% endfor %}
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
