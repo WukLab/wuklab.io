@@ -1,26 +1,30 @@
 <!-- This sections is about members in wuklab -->
 
-<section class="success" id="people">
+<section class="dark" id="people">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2>Member</h2>
-                <hr class="star-primary">
+                <hr class="star-light">
             </div>
         </div>
 
         {% for type in site.data.people %}
         <div class="row">
-            <h3 class="col-xs-12">{{ type.name }}</h3>
+            <div class="w-100 px-3">
+                <h3>{{ type.name }}</h3>
+            </div>
+
+            <!-- Generate link or div -->
             {% for person in type.members %}
             {% if person.link %}
               <a target="_blank" href="{{ person.link }}" class="d-block col-sm-3 col-xs-4">
             {% else %}
-              <div class="col-sm-3 col-xs-4">
+              <div class="col-sm-3 col-4 px-1">
             {% endif %}
 
-                <img class="img-responsive" src="{{ person.imageFile | prepend: 'img/member/' }}">
-                <h4>{{ person.name }}</h4>
+                <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
+                <h4 class="my-2">{{ person.name }}</h4>
 
             {% if person.link %} </a> {% else %} </div> {% endif %}
             {% endfor %}

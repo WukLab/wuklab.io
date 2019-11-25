@@ -1,0 +1,244 @@
+---
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: Disaggregate.jpg
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Resource Diaggregation
+summary: The traditional datacenter monolithic-server architecture and the software systems built on top of it are meeting their limitations in the face of new hardware and software trends. Our vision of the next-generation datacenter is to break the monolithic server boundary, an approach called resource disaggregation.
+---
+
+<div class="row-fluid">
+          <h2>Datacenter Resource Disaggregation</h2>
+        	<p>
+Datacenters have been using a monolithic server model for decades, where each server has a motherboard that hosts all types of hardware resources, usually including a processor, memory chips, storage devices, and network cards.
+This monolithic architecture is easy to deploy but is inflexible in terms of resource utilization,
+new hardware device integration, and failure handling.
+We are looking into new ways to rethink datacenter hardware and software systems,
+including disaggregated hardware architecture, disaggregated operating system,
+remote memory (and non-volatile memory) systems,
+and distributed (non-volatile) memory systems.
+	  </p>
+	  </p>
+
+	  </div>
+	  <hr>
+
+
+	<div class="row-fluid">
+	  <h3>Hardware Approach to Building OS Functionalities</h3>
+          <div class="span6">
+        	<p class="text-left">
+
+Operating system is the system that manages and virtualized hardware and has thus been always implemented in software.
+Two recent trends make it appealing to implement OS functionalities in hardware.
+First, datacenter resource disaggregation separates hardware resources into network-attached, stand-alone devices that applications access from remote.
+Second, many cloud providers now offer hardware-based accelerators such as FPGA as a service.
+Applications in both these cases need to have virtualized and protected accesses to hardware resources, and datacenters should support these applications with solutions of good performance per dollar.
+
+</p>
+<p>
+
+We built <b>LegoFPGA</b>, an FPGA-based platform to manage and virtualize hardware resources for both applications running at remote and applications running locally on FPGA.
+LegoFPGA delivers hardware-like performance and software-like flexibility at relatively low cost.
+<!-- with two main ideas. First, we adopt an exokernel-like OS architecture, where a minimal “kernel” layer provides safe multiplexing of hardware resources and a “library” layer contains customizable OS modules that manage the resources. Second, we separate data path from control path and optimize the former for performance and latter for low FPGA area usages.-->
+We implemented a set of OS functionalities to manage on-device memory and device network interface.
+Using these functionalities, we built a virtualized remote memory system and a remote key-value store system.
+These systems deliver performance at or close to network line-rate with small FPGA area usages.
+		</p>
+	  </div>
+          <div class="span1">
+	  </div>
+          <div class="span3">
+<br>
+<br>
+
+<img width="180" src="LegoFPGA.jpg">
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Network for Resource Disaggregation</h3>
+          <div class="span6">
+        	<p class="text-left">
+The need to access remote resources and to access them fast demands a new network system for future disaggregated datacenters.
+We are building <b>LegoNET</b>, a new network system designed for adding disaggregated resources to
+existing datacenters in a non-disruptive way, while delivering low-latency, high-throughput performance
+and a flexible, easy-to-use interface.
+		</p>
+	  </div>
+<!--
+          <div class="span5">
+<img height="150" src="">
+	  </div>
+-->
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Disaggregated Operating System</h3>
+          <div class="span11">
+<div class="row">
+<div class="span2 offset1">
+<p>
+<a target="_blank" href="http://legoos.io"><img width="120" src="LegoOS-logo.png"></a>
+</p>
+</div>
+<div class="span8">
+        	<p class="text-left">
+The monolithic server model where a server is the unit
+of deployment, operation, and failure is meeting its limits
+in the face of several recent hardware
+and application trends.
+To improve resource utilization,
+elasticity, heterogeneity,
+and failure handling in datacenters, we believe
+that datacenters should break monolithic servers
+into disaggregated, network-attached hardware components.
+Despite the promising benefits of hardware resource
+disaggregation, no existing OSes or software systems
+can properly manage it.
+</p>
+</div>
+</div>
+</div>
+       <div class="span6">
+<p>
+We propose a new OS model called the splitkernel to
+manage disaggregated systems. Splitkernel disseminates
+traditional OS functionalities into loosely-coupled monitors,
+each of which runs on and manages a hardware
+component. A splitkernel also performs resource allocation
+and failure handling of a distributed set of hardware
+components. Using the splitkernel model, we built
+LegoOS, a new OS designed for hardware resource disaggregation.
+LegoOS appears to users as a set of distributed
+servers. Internally, a user application can span
+multiple processor, memory, and storage hardware components.
+We implemented LegoOS on x86-64 and evaluated
+it by emulating hardware components using commodity
+servers. Our evaluation results show that LegoOS’
+performance is comparable to monolithic Linux
+servers, while largely improving resource packing and
+reducing failure rate over monolithic clusters.
+</p>
+          <p>
+<strong>Find out more about LegoOS <a target="_blank" href="http://legoos.io">here</a> and get LegoOS <a target="_blank" href="https://github.com/WukLab/LegoOS">here</a>.</strong>
+          </p>
+	  </div>
+          <div class="span5">
+<img width="360" src="LegoOS.jpg">
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Disaggregated Persistent Memory</h3>
+          <div class="span6">
+        	<p class="text-left">
+One viable approach to deploy persistent memory (PM) in datacenters
+is to attach PM as self-contained devices to the network as disaggregated
+persistent memory, or <b>DPM</b>. DPM requires no changes
+to existing servers in datacenters; without the need to
+include a processor, DPM devices are cheap to build;
+and by sharing DPM across compute servers, they offer
+great elasticity and efficient resource packing.
+</p>
+<p>
+We propose three architectures of DPM: 1) compute nodes
+directly access DPM (DPM-Direct); 2) compute nodes
+send requests to a coordinator server, which then accesses
+DPM to complete a request (DPM-Central); and
+3) compute nodes directly access DPM for data operations
+and communicate with a global metadata server for
+the control plane (DPM-Sep). Based on these architectures,
+we built three atomic, crash-consistent data stores.
+</p>
+	  </div>
+          <div class="span5">
+<p class="text-center">
+<img width="300" src="DPM.jpg" class="center">
+</p>
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Kernel-Level Indirection Layer for RDMA</h3>
+          <div class="span6">
+        	<p class="text-left">
+Recently, there is an increasing interest in building datacenter
+applications with RDMA because of its low-latency,
+high-throughput, and low-CPU-utilization benefits. However,
+RDMAis not readily suitable for datacenter applications.
+It lacks a flexible, high-level abstraction; its performance
+does not scale; and it does not provide resource sharing or
+flexible protection. Because of these issues, it is difficult to
+build RDMA-based applications and to exploit RDMA’s performance
+benefits.
+</p>
+<p>
+To solve these issues, we built <strong>LITE</strong>, a Local Indirection
+TiEr for RDMA in the Linux kernel that virtualizes native
+RDMA into a flexible, high-level, easy-to-use abstraction
+and allows applications to safely share resources. Despite
+the widely-held belief that kernel bypassing is essential to
+RDMA’s low-latency performance, we show that using a
+kernel-level indirection can achieve both flexibility and lowlatency,
+scalable performance at the same time.
+		</p>
+	  </div>
+          <div class="span5">
+<img height="150" src="LITE-architecture.jpg">
+	  </div>
+	</div>
+
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Distributed Shared Persistent Memory</h3>
+          <div class="span6">
+<div class="row">
+<div class="span3 offset1">
+<p>
+<img width="120" src="hotpot.png">
+</p>
+</div>
+<div class="span8">
+        	<p class="text-left">
+NVMs have the potential to greatly
+improve the performance and reliability of large-scale
+applications in datacenters.
+However, it is still unclear how to best utilize them
+in distributed, datacenter environments.
+</p>
+</div>
+</div>
+<p>
+We introduce Distributed Shared Persistent Memory
+(DSPM), a new framework for using persistent memories
+in distributed datacenter environments. DSPM provides
+a new abstraction that allows applications to both perform
+traditional memory load and store instructions and
+to name, share, and persist their data. We built <strong>Hotpot</strong>,
+a kernel-level DSPM system that provides low-latency,
+transparent memory accesses, data persistence, data reliability,
+and high availability.
+		</p>
+          <p>
+<strong>Get Hotpot <a target="_blank" href="https://github.com/WukLab/Hotpot">here</a>.</strong>
+          </p>
+	  </div>
+          <div class="span5">
+<img width="400" src="hotpot.jpg">
+	  </div>
+	</div>
+

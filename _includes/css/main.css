@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    color: #18bc9c;
 }
 
 p {
@@ -150,6 +151,7 @@ header .intro-text .skills {
 }
 
 .navbar {
+    background-color: white;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -194,6 +196,10 @@ section.dark {
     color: #fff;
     background: #2c3e50;
     /* background: #{{ site.color.primary }}; */
+}
+
+section.dark a {
+    color: #fff !important;
 }
 
 @media(max-width:767px) {
