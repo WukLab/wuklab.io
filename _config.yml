@@ -27,7 +27,7 @@ disqus_shortname: myshortname
 color:
   primary: 2c3e50 #18bc9c #80B3FF
   primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 18bc9c #FD6E8A
+  secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
 # Footer settings
@@ -53,4 +53,4 @@ address:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:title
