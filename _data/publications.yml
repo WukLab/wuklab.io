@@ -5,12 +5,14 @@
       author: Yiying Zhang, Yutong Huang
       journal: ACM SIGOPS Operating Systems Review
       misc: "53(1): 40-45 (2019)"
+      tag: [ml]
 
     - link: https://www.usenix.org/system/files/sec19-tsai.pdf
       title: "Pythia: Remote Oracles for the Masses"
       author: Shin-Yeh Tsai, Mathias Payer, Yiying Zhang
       conference: Proceedings of the 28th USENIX Security Symposium
       abbreviation: "USENIX SEC '19"
+      tag: [sec, net]
 
     
     - link: https://arxiv.org/abs/1902.02411
@@ -19,6 +21,7 @@
       conference: Proceedings of the 12th ACM International Systems and Storage Conference
       abbreviation: "SYSTOR '19"
       highlight: "Best Paper Award"
+      tag: [serverless]
 
     
     - link:         https://cseweb.ucsd.edu/~yiying/GoStudy-ASPLOS19.pdf
@@ -26,6 +29,7 @@
       author:       Tengfei Tu, Xiaoyu Liu, Linhai Song, Yiying Zhang
       conference:   Proceedings of the 24th International Conference on Architectural Support for Programming Languages and Operating Systems 
       abbreviation: "ASPLOS '19"
+      tag: [pl]
 
     
     - link:         https://www.usenix.org/system/files/osdi18-shan.pdf
@@ -34,32 +38,24 @@
       conference:   Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation 
       abbreviation: "OSDI '18"
       highlight:    Best Paper Award
+      tag: [serverless]
           
     - link:         https://cseweb.ucsd.edu/~yiying/LITE-sosp17.pdf
       title:        LITE Kernel RDMA Support for Datacenter Applications
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   Proceedings of the 26th ACM Symposium on Operating Systems Principles 
       abbreviation: "SOSP '17"
+      tag: [net]
           
     - link:         https://cseweb.ucsd.edu/~yiying/hotpot-socc17.pdf
       title:        Distributed Shared Persistent Memory
       author:       Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
       conference:   Proceedings of the ACM Symposium on Cloud Computing 2017 
       abbreviation: "SoCC '17"
+      tag: [arch]
           
-    - link:         https://cseweb.ucsd.edu/~yiying/nvmmstudy-msst15.pdf
-      title:        A Study of Application Performance with Non-Volatile Main Memory
-      author:       Yiying Zhang, Steven Swanson
-      conference:   Proceedings of the 31st IEEE Conference on Massive Data Storage 
-      abbreviation: "MSST '15"
-          
-    - link:         https://cseweb.ucsd.edu/~yiying/mojim-asplos15.pdf
-      title:        "Mojim: A Reliable and Highly-Available Non-Volatile Memory System"
-      author:       Yiying Zhang, Jian Yang, Amirsaman Memaripour, Steven Swanson
-      conference:   Proceedings of the 20th International Conference on Architectural Support for Programming Languages and Operating Systems 
-      abbreviation: "ASPLOS '15"
-      
-- name: Workshop and Posters
+     
+- name: Workshop
   entries:
 
     - link:         https://cseweb.ucsd.edu/~yiying/one-sided-security.pdf
@@ -67,64 +63,58 @@
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   To appear at the 11th USENIX Workshop on Hot Topics in Cloud Computing 
       abbreviation: "HotCloud '19"
+      tag: [sec, net]
       
     - title:        Challenges in Building and Deploying Disaggregated Persistent Memory
       author:       Yizhou Shan, Yutong Huang, Yiying Zhang
       conference:   to appear at the 9th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
+      tag: [serverless, arch]
       
     - title:        Building Atomic, Crash-Consistent Data Stores with Disaggregated Persistent Memory
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   to appear at the 9th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
-      
-    - title:        Understanding Real-World Concurrency Bugs in Go
-      author:       Tengfei Tu, Xiaoyu Liu, Linhai Song, Yiying Zhang
-      conference:   Posterr at the 13th USENIX Symposium on Operating Systems Design and Implementation 
-      abbreviation: "OSDI '18"
-      
+      tag: [serverless, arch, net]
+     
     - title:        Disaggregating Memory with Software-Managed Virtual Cache
       author:       Yizhou Shan, Yiying Zhang
       conference:   the 2018 Workshop on Warehouse-scale Memory Systems 
       abbreviation: "WAMS '18"
       comment:      "co-located with ASPLOS '18"
+      tag: [serverless, arch]
       
     - title:        "MemAlbum: an Object-Based Remote Software Transactional Memory System"
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   the 2018 Workshop on Warehouse-scale Memory Systems 
       abbreviation: "WAMS '18"
       comment:      "co-located with ASPLOS '18"
+      tag: [serverless, net]
       
     - title:        "Split Container: Running Containers beyond Physical Machine Boundaries"
       author:       Yilun Chen, Yiying Zhang
       conference:   the 2018 Workshop on Warehouse-scale Memory Systems 
       abbreviation: "WAMS '18"
       comment:      "co-located with ASPLOS '18"
+      tag: [serverless]
           
     - link:         http://nvmw.ucsd.edu/nvmw18-program/unzip/current/nvmw2018-final19.pdf
       title:        Distributed Shared Persistent Memory
       author:       Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
       conference:   the 9th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '18"
-      
-    - title:        "Lego: A Distributed, Decomposed OS for Resource Disaggregation"
-      author:       Yizhou Shan, Yilun Chen, Yutong Huang, Sumukh Hallymysore, Yiying Zhang
-      conference:   Poster at the 26th ACM Symposium on Operating Systems Principles 
-      abbreviation: "SOSP '17"
-      
-    - title:        Disaggregated Operating System
-      author:       Yizhou Shan, Sumukh Hallymysore, Yutong Huang, Yilun Chen, Yiying Zhang
-      conference:   Poster at the ACM Symposium on Cloud Computing 2017 
-      abbreviation: "SoCC '17"
+      tag: [arch]
       
     - link:         http://hpts.ws/papers/2017/lego.pdf
       title:        Disaggregated Operating System
       author:       Yiying Zhang, Yizhou Shan, Sumukh Hallymysore
       conference:   the 17th International Workshop on High Performance Transaction Systems 
       abbreviation: "HPTS '17"
+      tag: [serverless]
       
     - link:         https://cseweb.ucsd.edu/~yiying/FAST16-Rockies.pdf
       title:        "Rockies: A Network System for Future Data Center Racks"
       author:       Shin-Yeh Tsai, Linzhe Li, Yiying Zhang
       conference:   WIP and Poster at the 14th USENIX Conference on File and Storage Technologies 
       abbreviation: "FAST '16"
+      tag: [net]
