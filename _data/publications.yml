@@ -1,12 +1,12 @@
 - name: Conferences and Journals
   entries:
-    - link: LearnedOS-OSR19.pdf
+    - link: https://cseweb.ucsd.edu/~yiying/LearnedOS-OSR19.pdf
       title: "\"Learned\" Operating Systems"
       author: Yiying Zhang, Yutong Huang
       journal: ACM SIGOPS Operating Systems Review
       misc: "53(1): 40-45 (2019)"
 
-    - link: Pythia.pdf
+    - link: https://www.usenix.org/system/files/sec19-tsai.pdf
       title: "Pythia: Remote Oracles for the Masses"
       author: Shin-Yeh Tsai, Mathias Payer, Yiying Zhang
       conference: Proceedings of the 28th USENIX Security Symposium
@@ -21,39 +21,39 @@
       highlight: "Best Paper Award"
 
     
-    - link:         GoStudy-ASPLOS19.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/GoStudy-ASPLOS19.pdf
       title:        Understanding Real-World Concurrency Bugs in Go
       author:       Tengfei Tu, Xiaoyu Liu, Linhai Song, Yiying Zhang
       conference:   Proceedings of the 24th International Conference on Architectural Support for Programming Languages and Operating Systems 
       abbreviation: "ASPLOS '19"
 
     
-    - link:         LegoOS-OSDI18.pdf
+    - link:         https://www.usenix.org/system/files/osdi18-shan.pdf
       title:        "LegoOS: A Disaggregated, Distributed OS for Hardware Resource Disaggregation"
       author:       Yizhou Shan, Yutong Huang, Yilun Chen, Yiying Zhang
       conference:   Proceedings of the 13th USENIX Symposium on Operating Systems Design and Implementation 
       abbreviation: "OSDI '18"
       highlight:    Best Paper Award
           
-    - link:         LITE-sosp17.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/LITE-sosp17.pdf
       title:        LITE Kernel RDMA Support for Datacenter Applications
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   Proceedings of the 26th ACM Symposium on Operating Systems Principles 
       abbreviation: "SOSP '17"
           
-    - link:         hotpot-socc17.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/hotpot-socc17.pdf
       title:        Distributed Shared Persistent Memory
       author:       Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
       conference:   Proceedings of the ACM Symposium on Cloud Computing 2017 
       abbreviation: "SoCC '17"
           
-    - link:         nvmmstudy-msst15.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/nvmmstudy-msst15.pdf
       title:        A Study of Application Performance with Non-Volatile Main Memory
       author:       Yiying Zhang, Steven Swanson
       conference:   Proceedings of the 31st IEEE Conference on Massive Data Storage 
       abbreviation: "MSST '15"
           
-    - link:         mojim-asplos15.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/mojim-asplos15.pdf
       title:        "Mojim: A Reliable and Highly-Available Non-Volatile Memory System"
       author:       Yiying Zhang, Jian Yang, Amirsaman Memaripour, Steven Swanson
       conference:   Proceedings of the 20th International Conference on Architectural Support for Programming Languages and Operating Systems 
@@ -62,7 +62,7 @@
 - name: Workshop and Posters
   entries:
 
-    - link:         one-sided-security.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/one-sided-security.pdf
       title:        "A Double-Edged Sword: Security Threats and Opportunities in One-Sided Network Communication"
       author:       Shin-Yeh Tsai, Yiying Zhang
       conference:   To appear at the 11th USENIX Workshop on Hot Topics in Cloud Computing 
@@ -123,7 +123,7 @@
       conference:   the 17th International Workshop on High Performance Transaction Systems 
       abbreviation: "HPTS '17"
       
-    - link:         FAST16-Rockies.pdf
+    - link:         https://cseweb.ucsd.edu/~yiying/FAST16-Rockies.pdf
       title:        "Rockies: A Network System for Future Data Center Racks"
       author:       Shin-Yeh Tsai, Linzhe Li, Yiying Zhang
       conference:   WIP and Poster at the 14th USENIX Conference on File and Storage Technologies 
