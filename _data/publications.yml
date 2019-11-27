@@ -111,10 +111,3 @@
       conference:   the 17th International Workshop on High Performance Transaction Systems 
       abbreviation: "HPTS '17"
       tag: [serverless]
-      
-    - link:         https://cseweb.ucsd.edu/~yiying/FAST16-Rockies.pdf
-      title:        "Rockies: A Network System for Future Data Center Racks"
-      author:       Shin-Yeh Tsai, Linzhe Li, Yiying Zhang
-      conference:   WIP and Poster at the 14th USENIX Conference on File and Storage Technologies 
-      abbreviation: "FAST '16"
-      tag: [net]
