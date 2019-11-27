@@ -12,6 +12,8 @@
                     {{ content }}
                 </div>
             </section>
+            {% capture tag %}{{ page.tag }}{% endcapture %}
+            {% include publication.html %}
             {% include footer.html %}
         </main>
         {% include js.html %}
