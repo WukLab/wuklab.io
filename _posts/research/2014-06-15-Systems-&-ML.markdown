@@ -6,11 +6,17 @@ summary: building smart systems and building systems smartly
 ---
 
 <div class="row-fluid">
+<i>
 <p>
-
+Modern machine-learning and artificial intelligence problems are not (only) algorithmetic ones
+but (also) systems ones.
+We are seeking solutions for both building better systems for ML/AI 
+and using ML/AI to build systems.
 </p>
+</i>
 </div>
 
+<hr>
 <hr>
 
 <div class="row-fluid">

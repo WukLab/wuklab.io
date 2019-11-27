@@ -7,18 +7,52 @@ summary: building next-generation serverless datacenters
 
 
 <div class="row-fluid">
-        	<p>
-Datacenters have been using a monolithic server model for decades, where each server has a motherboard that hosts all types of hardware resources, usually including a processor, memory chips, storage devices, and network cards.
-This monolithic architecture is easy to deploy but is inflexible in terms of resource utilization,
-new hardware device integration, and failure handling.
-We are looking into new ways to rethink datacenter hardware and software systems,
-including disaggregated hardware architecture, disaggregated operating system,
-remote memory (and non-volatile memory) systems,
-and distributed (non-volatile) memory systems.
-	  </p>
+<i>
+<p>
+Datacenters have been using a “monolithic” server model for decades, 
+where each server hosts a set of hardware devices like CPU and DRAM 
+and runs an OS or hypervisor on top to manage the hardware resources. 
+In recent years, cloud providers offer a type of service called “serverless computing” in response to cloud users’ desires for not managing clusters and for auto-scaling their applications to the
+right size. 
+Serverless computing quickly gained popularity, but today’s serverless computing still runs on servers. 
+The monolithic server model is not the best fit for serverless computing and 
+it fundamentally restricts datacenters from achieving efficient resource packing, hardware rightsizing, and great heterogeneity.
+</p>
+<p>
+We propose to fully or partially “disaggregate” monolithic servers into network-attached hardware 
+components that host different hardware resources and offer different functionalities 
+(e.g., a computation pool for running application logics,
+a memory pool for enlarged and consolidated memory spaces, 
+a persistent-memory pool for fast accesses to key-value data).
+With such a “serverless” datacenter, hardware resources can be allocated and scaled to the exact amount that applications use and can be individually managed and customized for different application needs.
+WukLab is taking piorneering efforts in building end-to-end, multi-layer solutions for 
+the next-generation serverless datacenter, including new hardware platforms, a new operating system,
+new distributed systems, a new virtualization platform, new networking systems, 
+and new security solutions.
+</p>
+</i>
 </div>
 	  <hr>
+	  <hr>
 
+	<div class="row-fluid">
+	  <h3>Serverless Computing on Disaggregated Resources</h3>
+          <div class="span6">
+        	<p class="text-left">
+
+We are building a new serverless-computing platform on disaggregated resource clusters.
+Users can write functions just like traditional POSIX-compatible programs,
+with the additional support from our platform for managing application "states",
+IPC-like communication across functions,
+and improved security and QoS guarantees.
+		</p>
+          <p>
+Stay tuned for more details.
+		</p>
+	  </div>
+	</div>
+
+	  <hr>
 
 	<div class="row-fluid">
 	  <h3>Hardware-Based Disaggregated Memory Services</h3>
@@ -29,6 +63,8 @@ We are building a hardware platform which provides disaggregated and distributed
 to both existing datacenter servers and disaggregated processors.
 Our hardware-based disaggregated memory services can be accessed by virtual memory interface,
 key-value store interface, and other customized interfaces.
+		</p>
+          <p>
 Stay tuned for more details.
 		</p>
 	  </div>
@@ -106,7 +142,9 @@ servers, while largely improving resource packing and
 reducing failure rate over monolithic clusters.
 </p>
           <p>
-<strong>Find out more about LegoOS <a target="_blank" href="http://legoos.io">here</a> and get LegoOS <a target="_blank" href="https://github.com/WukLab/LegoOS">here</a>.</strong>
+<strong>Find out more about 
+<a target="_blank" href="http://legoos.io"><img width="100" src="img/research/LegoOS-logo.png"></a>
+and <a target="_blank" href="https://github.com/WukLab/LegoOS">get it here</a>.</strong>
           </p>
 	  </div>
 	  

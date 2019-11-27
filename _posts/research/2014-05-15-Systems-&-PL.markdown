@@ -7,12 +7,20 @@ summary: better programming for better systems building
 
 
 <div class="row-fluid">
+<i>
 <p>
 Writing correct programs is the foundation of building reliable software systems.
-
+Programming language designers constantly seeks new approaches to improve the efficiency, 
+relability, and flexibility of software programming.
+However, less is known about how effective these new approaches are in the real world.
+We take an empirical view of new programming languages features
+by studying real-world usages and issues (i.e., bugs)
+and by building tools that can help programmers avoid or detect bugs.
 </p>
+</i>
 </div>
 
+<hr>
 <hr>
 
 <div class="row-fluid">
