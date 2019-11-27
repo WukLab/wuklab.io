@@ -5,6 +5,41 @@ tag: arch
 summary: building hardware for systems and building systems in hardware
 ---
 
+
+	<div class="row-fluid">
+	  <h3>Virtualized FPGA Cloud Services</h3>
+          <div class="span6">
+        	<p class="text-left">
+
+We are building a virtualization layer on FPGA to improve the flexibility, programmability,
+utilization, and safety of FPGA acceleration as a cloud service.
+		</p>
+          <p>
+Stay tuned for more details.
+		</p>
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Hardware-Based Disaggregated Memory Services</h3>
+          <div class="span6">
+        	<p class="text-left">
+
+We are building a hardware platform which provides disaggregated and distributed memory services
+to both existing datacenter servers and disaggregated processors.
+Our hardware-based disaggregated memory services can be accessed by virtual memory interface,
+key-value store interface, and other customized interfaces.
+		</p>
+          <p>
+Stay tuned for more details.
+		</p>
+	  </div>
+	</div>
+
+      <hr>
+
 	<div class="row-fluid">
 	  <h3>Disaggregated Persistent Memory</h3>
           <div class="span6">
@@ -40,53 +75,18 @@ we built three atomic, crash-consistent data stores.
       <hr>
 
 	<div class="row-fluid">
-	  <h3>Kernel-Level Indirection Layer for RDMA</h3>
-          <div class="span6">
-        	<p class="text-left">
-Recently, there is an increasing interest in building datacenter
-applications with RDMA because of its low-latency,
-high-throughput, and low-CPU-utilization benefits. However,
-RDMAis not readily suitable for datacenter applications.
-It lacks a flexible, high-level abstraction; its performance
-does not scale; and it does not provide resource sharing or
-flexible protection. Because of these issues, it is difficult to
-build RDMA-based applications and to exploit RDMA’s performance
-benefits.
-</p>
-<p>
-To solve these issues, we built <strong>LITE</strong>, a Local Indirection
-TiEr for RDMA in the Linux kernel that virtualizes native
-RDMA into a flexible, high-level, easy-to-use abstraction
-and allows applications to safely share resources. Despite
-the widely-held belief that kernel bypassing is essential to
-RDMA’s low-latency performance, we show that using a
-kernel-level indirection can achieve both flexibility and lowlatency,
-scalable performance at the same time.
-		</p>
-	  </div>
-	  <!--
-          <div class="span5">
-<img height="150" src="img/research/LITE-architecture.jpg">
-	  </div>
-	  -->
-	</div>
-
-
-      <hr>
-
-	<div class="row-fluid">
 	  <h3>Distributed Shared Persistent Memory</h3>
           <div class="span6">
+<!--
 <div class="row">
 
-<!--
 <div class="span3 offset1">
 <p>
 <img width="120" src="img/research/hotpot-logo.jpg">
 </p>
 </div>
--->
 <div class="span8">
+-->
         	<p class="text-left">
 NVMs have the potential to greatly
 improve the performance and reliability of large-scale
@@ -94,8 +94,10 @@ applications in datacenters.
 However, it is still unclear how to best utilize them
 in distributed, datacenter environments.
 </p>
+<!--
 </div>
 </div>
+-->
 <p>
 We introduce Distributed Shared Persistent Memory
 (DSPM), a new framework for using persistent memories
@@ -118,12 +120,16 @@ and high availability.
 	  -->
 	</div>
 
-<hr/>
+<hr>
 
-<div class="row">
+	<div class="row-fluid">
     <h3>Reliable and Highly-Available NVMM</h3>
+          <div class="span6">
+        	<p class="text-left">
+	  <!--
     <div class="w-100">
         <img class="float-right m-2" height="200" src="img/research/Mojim_achitecture.jpg">
+	  -->
         <p>
         NVMM would be especially useful in large-scale data center environments,
         where reliability and availability are critical.
@@ -142,24 +148,7 @@ and high availability.
         Mojim also outperforms MongoDB's replication system by 3.4 to 4X.
         </p>
     </div>
-    <div class="col-md-5">
-    </div>
 </div>
 
 <hr>
 
-<div class="row">
-    <h3>Application Performance Study with NVMM</h3>
-    <div class="w-100">
-        <img class="img-fluid  float-right" height="200" src="img/research/pmep_architecture.jpg">
-        <p>
-        We conduct a study of storage application performance with NVMM using a hardware NVMM emulator that allows fine-grain tuning of NVMM performance parameters. 
-        Our evaluation results show that NVMM improves storage application performance significantly over flash-based SSDs and HDDs. 
-        When comparing realistic NVMM to idealized NVMM with the same performance as DRAM, we find that although NVMM is projected to have higher latency and lower bandwidth than DRAM, 
-        these difference have only a modest impact on application performance. 
-        A much larger drag on NVMM performance is the cost of ensuring data resides safely in the NVMM (rather than the volatile caches) so that applications can make strong guarantees about persistence and consistency. 
-        In response, we propose an optimized approach to flushing data from CPU caches that minimizes this cost. 
-        Our evaluation shows that this technique significantly improves performance for applications that require strict durability and consistency guarantees over large regions of memory.
-        </p>
-    </div>
-</div>

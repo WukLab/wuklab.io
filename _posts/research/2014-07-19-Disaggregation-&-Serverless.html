@@ -52,18 +52,20 @@ and a flexible, easy-to-use interface.
 
 	<div class="row-fluid">
 	  <h3>Disaggregated Operating System</h3>
+<!--
           <div class="span11">
 <div class="row">
 
-<!--
 <div class="span2 offset1">
 <p>
 <a target="_blank" href="http://legoos.io"><img width="120" src="img/research/LegoOS-logo.png"></a>
 </p>
 </div>
--->
 
 <div class="span8">
+        	<p class="text-left">
+-->
+          <div class="span6">
         	<p class="text-left">
 The monolithic server model where a server is the unit
 of deployment, operation, and failure is meeting its limits
@@ -78,10 +80,12 @@ Despite the promising benefits of hardware resource
 disaggregation, no existing OSes or software systems
 can properly manage it.
 </p>
+<!--
 </div>
 </div>
 </div>
        <div class="span6">
+-->
 <p>
 We propose a new OS model called the splitkernel to
 manage disaggregated systems. Splitkernel disseminates
@@ -151,13 +155,13 @@ we built three atomic, crash-consistent data stores.
       <hr>
 
 	<div class="row-fluid">
-	  <h3>Kernel-Level Indirection Layer for RDMA</h3>
+	  <h3>Indirection Layer for RDMA</h3>
           <div class="span6">
         	<p class="text-left">
 Recently, there is an increasing interest in building datacenter
 applications with RDMA because of its low-latency,
 high-throughput, and low-CPU-utilization benefits. However,
-RDMAis not readily suitable for datacenter applications.
+RDMA is not readily suitable for datacenter applications.
 It lacks a flexible, high-level abstraction; its performance
 does not scale; and it does not provide resource sharing or
 flexible protection. Because of these issues, it is difficult to
@@ -166,66 +170,30 @@ benefits.
 </p>
 <p>
 To solve these issues, we built <strong>LITE</strong>, a Local Indirection
-TiEr for RDMA in the Linux kernel that virtualizes native
+TiEr for RDMA that virtualizes native
 RDMA into a flexible, high-level, easy-to-use abstraction
-and allows applications to safely share resources. Despite
+and allows applications to safely share resources. 
+	  <!--
+Despite
 the widely-held belief that kernel bypassing is essential to
 RDMA’s low-latency performance, we show that using a
 kernel-level indirection can achieve both flexibility and lowlatency,
 scalable performance at the same time.
+	  -->
 		</p>
-	  </div>
+          <p>
+<strong>Find out more about and get LITE <a target="_blank" href="https://github.com/WukLab/LITE">here</a>.</strong>
+          </p>
 	  <!--
+	  </div>
           <div class="span5">
 <img height="150" src="img/research/LITE-architecture.jpg">
 	  </div>
-	  -->
 	</div>
+	  -->
+	  </div>
+	  </div>
 
 
       <hr>
-
-	<div class="row-fluid">
-	  <h3>Distributed Shared Persistent Memory</h3>
-          <div class="span6">
-<div class="row">
-
-<!--
-<div class="span3 offset1">
-<p>
-<img width="120" src="img/research/hotpot-logo.jpg">
-</p>
-</div>
--->
-<div class="span8">
-        	<p class="text-left">
-NVMs have the potential to greatly
-improve the performance and reliability of large-scale
-applications in datacenters.
-However, it is still unclear how to best utilize them
-in distributed, datacenter environments.
-</p>
-</div>
-</div>
-<p>
-We introduce Distributed Shared Persistent Memory
-(DSPM), a new framework for using persistent memories
-in distributed datacenter environments. DSPM provides
-a new abstraction that allows applications to both perform
-traditional memory load and store instructions and
-to name, share, and persist their data. We built <strong>Hotpot</strong>,
-a kernel-level DSPM system that provides low-latency,
-transparent memory accesses, data persistence, data reliability,
-and high availability.
-		</p>
-          <p>
-<strong>Get Hotpot <a target="_blank" href="https://github.com/WukLab/Hotpot">here</a>.</strong>
-          </p>
-	  </div>
-	  <!--
-          <div class="span5">
-<img width="400" src="img/research/hotpot.jpg">
-	  </div>
-	  -->
-	</div>
 
