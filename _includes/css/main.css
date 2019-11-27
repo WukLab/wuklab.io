@@ -369,3 +369,8 @@ footer .footer-below {
 .pub p {
     font-size: 16px !important;
 }
+
+/* TODO: chage this */
+i.fa {
+    color: white;
+}
