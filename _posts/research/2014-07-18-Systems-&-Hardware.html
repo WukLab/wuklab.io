@@ -5,86 +5,118 @@ tag: arch
 summary: building hardware for systems and building systems in hardware
 ---
 
-<div class="row-fluid">
-        <p>
-        </p>
-    </div>
-</div>
+	<div class="row-fluid">
+	  <h3>Disaggregated Persistent Memory</h3>
+          <div class="span6">
+        	<p class="text-left">
+One viable approach to deploy persistent memory (PM) in datacenters
+is to attach PM as self-contained devices to the network as disaggregated
+persistent memory, or <b>DPM</b>. DPM requires no changes
+to existing servers in datacenters; without the need to
+include a processor, DPM devices are cheap to build;
+and by sharing DPM across compute servers, they offer
+great elasticity and efficient resource packing.
+</p>
+<p>
+We propose three architectures of DPM: 1) compute nodes
+directly access DPM (DPM-Direct); 2) compute nodes
+send requests to a coordinator server, which then accesses
+DPM to complete a request (DPM-Central); and
+3) compute nodes directly access DPM for data operations
+and communicate with a global metadata server for
+the control plane (DPM-Sep). Based on these architectures,
+we built three atomic, crash-consistent data stores.
+</p>
+	  </div>
+<!--
+          <div class="span5">
+<p class="text-center">
+<img width="300" src="img/research/DPM.jpg" class="center">
+</p>
+	  </div>
+-->
+	</div>
 
-<hr/>
+      <hr>
 
+	<div class="row-fluid">
+	  <h3>Kernel-Level Indirection Layer for RDMA</h3>
+          <div class="span6">
+        	<p class="text-left">
+Recently, there is an increasing interest in building datacenter
+applications with RDMA because of its low-latency,
+high-throughput, and low-CPU-utilization benefits. However,
+RDMAis not readily suitable for datacenter applications.
+It lacks a flexible, high-level abstraction; its performance
+does not scale; and it does not provide resource sharing or
+flexible protection. Because of these issues, it is difficult to
+build RDMA-based applications and to exploit RDMA’s performance
+benefits.
+</p>
+<p>
+To solve these issues, we built <strong>LITE</strong>, a Local Indirection
+TiEr for RDMA in the Linux kernel that virtualizes native
+RDMA into a flexible, high-level, easy-to-use abstraction
+and allows applications to safely share resources. Despite
+the widely-held belief that kernel bypassing is essential to
+RDMA’s low-latency performance, we show that using a
+kernel-level indirection can achieve both flexibility and lowlatency,
+scalable performance at the same time.
+		</p>
+	  </div>
+	  <!--
+          <div class="span5">
+<img height="150" src="img/research/LITE-architecture.jpg">
+	  </div>
+	  -->
+	</div>
+
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Distributed Shared Persistent Memory</h3>
+          <div class="span6">
 <div class="row">
-    <h3 class="w-100">Disaggregated Persistent Memory</h3>
-    <div class="col-md-6">
-        <p>
-        One viable approach to deploy persistent memory (PM) in datacenters 
-        is to attach PM as self-contained devices to the network as disaggregated
-        persistent memory, or <b>DPM</b>. DPM requires no changes
-        to existing servers in datacenters; without the need to
-        include a processor, DPM devices are cheap to build;
-        and by sharing DPM across compute servers, they offer
-        great elasticity and efficient resource packing.
-        </p>
-    </div>
 
-    <div class="col-md-5">
-        <img src="img/research/DPM.jpg" class="img-fluid">
-    </div>
-
-    <div class="w-100">
-        <p>
-        We propose three architectures of DPM: 1) compute nodes
-        directly access DPM (DPM-Direct); 2) compute nodes
-        send requests to a coordinator server, which then accesses
-        DPM to complete a request (DPM-Central); and
-        3) compute nodes directly access DPM for data operations
-        and communicate with a global metadata server for
-        the control plane (DPM-Sep). Based on these architectures,
-        we built three atomic, crash-consistent data stores.
-        </p>
-    </div>
+<!--
+<div class="span3 offset1">
+<p>
+<img width="120" src="img/research/hotpot-logo.jpg">
+</p>
 </div>
-
-<hr/>
-
-<div class="row">
-    <h3 class="w-100">Distributed Shared Persistent Memory</h3>
-    <div class="col-md-6">
-        <div class="row">
-            <div class="col-md-3 offset1">
-                <p>
-                <img width="120" src="img/research/hotpot-logo.jpg">
-                </p>
-            </div>
-            <div class="col-md-8">
-                <p class="text-left">
-                NVMs have the potential to greatly
-                improve the performance and reliability of large-scale
-                applications in datacenters.
-                However, it is still unclear how to best utilize them
-                in distributed, datacenter environments.
-                </p>
-            </div>
-        </div>
-        <p>
-        We introduce Distributed Shared Persistent Memory
-        (DSPM), a new framework for using persistent memories
-        in distributed datacenter environments. DSPM provides
-        a new abstraction that allows applications to both perform
-        traditional memory load and store instructions and
-        to name, share, and persist their data. We built <strong>Hotpot</strong>,
-        a kernel-level DSPM system that provides low-latency,
-        transparent memory accesses, data persistence, data reliability,
-        and high availability.
-        </p>
-        <p>
-        <strong>Get Hotpot <a target="_blank" href="https://github.com/WukLab/Hotpot">here</a>.</strong>
-        </p>
-    </div>
-    <div class="col-md-5">
-        <img height="150" src="img/research/hotpot.jpg">
-    </div>
+-->
+<div class="span8">
+        	<p class="text-left">
+NVMs have the potential to greatly
+improve the performance and reliability of large-scale
+applications in datacenters.
+However, it is still unclear how to best utilize them
+in distributed, datacenter environments.
+</p>
 </div>
+</div>
+<p>
+We introduce Distributed Shared Persistent Memory
+(DSPM), a new framework for using persistent memories
+in distributed datacenter environments. DSPM provides
+a new abstraction that allows applications to both perform
+traditional memory load and store instructions and
+to name, share, and persist their data. We built <strong>Hotpot</strong>,
+a kernel-level DSPM system that provides low-latency,
+transparent memory accesses, data persistence, data reliability,
+and high availability.
+		</p>
+          <p>
+<strong>Get Hotpot <a target="_blank" href="https://github.com/WukLab/Hotpot">here</a>.</strong>
+          </p>
+	  </div>
+	  <!--
+          <div class="span5">
+<img width="400" src="img/research/hotpot.jpg">
+	  </div>
+	  -->
+	</div>
 
 <hr/>
 
