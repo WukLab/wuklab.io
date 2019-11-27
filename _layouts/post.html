@@ -6,8 +6,8 @@
         {% capture summary %}{{ page.summary }}{% endcapture %}
         {% include nav.html %}
         <main role="main">
+            {% include header.html %}
             <section>
-                {% include header.html %}
                 <div class="container">
                     {{ content }}
                 </div>
