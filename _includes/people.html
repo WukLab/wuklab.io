@@ -12,19 +12,20 @@
         {% for type in site.data.people %}
         <div class="row">
             <div class="w-100 px-3">
-                <h3>{{ type.name }}</h3>
+                <h4>{{ type.name }}</h3>
             </div>
 
             <!-- Generate link or div -->
             {% for person in type.members %}
-              <div class="col-md-2 col-4 px-1">
+              <div class="col-md-1 col-4 px-1">
 
                 <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
 
-                <h5 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
+                <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
               </div>
 
             {% endfor %}
+            <div class="w-100 px-1"><p></p></div>
         </div>
         {% endfor %}
 
