@@ -32,8 +32,8 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
+  copyright: WukLab
+  location: Contact Us
   social: Around the Web
 #  credits: Credits 
 
@@ -46,9 +46,10 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
+  - line: yiying@ucsd.edu
   - line: Dept of Computer Science and Engineering
   - line: University of California, San Diego
-  - line: 9500 Gilman Drive
+  - line: 9500 Gilman Drive, M/C 0404
   - line: La Jolla, CA 92093-0404  U.S.A.
 
 # Build settings
