@@ -3,16 +3,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
+                {% if tag %}
+                <h2>Related Publication</h2>
+                <hr/>
+                {% else %}
                 <h2>Publication</h2>
                 <hr class="star-primary">
+                {% endif %}
             </div>
         </div>
         
         <div class="row-fluid pub">
 
         {% for type in site.data.publications %}
+
+        {% if tag %}
+            {% assign pubs = type.entries | where_exp: 'p', 'p.tag contains tag' %}
+        {% else %}
+            {% assign pubs = type.entries %}
+        {% endif %}
+
+        {% if pubs.size != 0 %}
         <h3>{{ type.name }}</h3> 
-            {% for pub in type.entries %}
+
+            {% for pub in pubs %}
             <!-- generate a publication entry from object -->
             <p>
                 <b><a target="_blank" href="{{ pub.link }}">{{ pub.title }}</a></b>
@@ -27,6 +41,8 @@
                 {% if pub.highlight %}(<font color="red"><b>{{ pub.highlight }}</b></font>){% endif %}
             </p>
             {% endfor %}
+
+        {% endif %}
         {% endfor %}
 
         </div>
