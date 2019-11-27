@@ -9,25 +9,56 @@
             </div>
         </div>
 
-        <div class="row">
-        {% for type in site.data.people %}
-         <div class="col">
-            <div class="w-100 px-3">
-                <h4>{{ type.name }}</h3>
+        <!-- for larger devices -->
+        <div class="d-none d-md-block">
+
+            <div class="row">
+                <div class="col-2 px-3">
+                    <h4>Faculty</h3>
+                </div>
+                <div class="col-4 px-3">
+                    <h4>Ph.D Students</h3>
+                </div>
+                <div class="col-6 px-3">
+                    <h4>Master Students</h3>
+                </div>
             </div>
 
-            <!-- Generate link or div -->
-            {% for person in type.members %}
-              <div class="col col-4 px-1">
+            <div class="row">
+            {% for type in site.data.people %}
+                <!-- Generate link or div -->
+                {% for person in type.members %}
+                  <div class="col-xs-4 col-md-2 px-1">
 
-                <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
+                    <img class="img-fluid member-avatar" src="{{ person.imageFile | prepend: 'img/member/' }}">
 
-                <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
-              </div>
+                    <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
+                  </div>
+                {% endfor %}
 
             {% endfor %}
+            </div>
         </div>
-        {% endfor %}
+
+        <!-- for smaller devices -->
+        <div class="d-md-none">
+            {% for type in site.data.people %}
+            <div class="row">
+                <div class="w-100">
+                    <h4>{{ type.name }}</h3>
+                </div>
+
+                {% for person in type.members %}
+                <div class="col-4 px-1">
+
+                    <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
+
+                    <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
+                </div>
+                {% endfor %}
+
+            </div>
+            {% endfor %}
         </div>
 
     </div>
