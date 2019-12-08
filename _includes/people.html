@@ -25,7 +25,7 @@
             </div>
 
             <div class="row">
-            {% for type in site.data.people %}
+            {% for type in site.data.people.currentMembers %}
                 <!-- Generate link or div -->
                 {% for person in type.members %}
                   <div class="col-xs-4 col-md-2 px-1">
@@ -42,9 +42,9 @@
 
         <!-- for smaller devices -->
         <div class="d-md-none">
-            {% for type in site.data.people %}
+            {% for type in site.data.people.currentMembers %}
             <div class="row">
-                <div class="w-100">
+                <div class="col-12">
                     <h4>{{ type.name }}</h3>
                 </div>
 
@@ -53,13 +53,28 @@
 
                     <img class="img-fluid" src="{{ person.imageFile | prepend: 'img/member/' }}">
 
-                    <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
+                    <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h6>
                 </div>
                 {% endfor %}
 
             </div>
             {% endfor %}
         </div>
+
+        <!-- Alumnus -->
+        <div class="row alumnus mt-3">
+        <div class="col-12">
+            <h4>Alumnus</h4>
+        </div>
+        {% for type in site.data.people.alumnus %}
+        {% for person in type.members %}
+            <div class="col-12">
+                <span class="my-2"><b>{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</b> ({{ type.name }} {{ person.gradYear }}), now {{ person.affiliation }}</span>
+            </div>
+        {% endfor %}
+        {% endfor %}
+        </div>
+
 
     </div>
 </section>

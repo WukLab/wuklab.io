@@ -219,6 +219,10 @@ section.dark a {
     color: #fff !important;
 }
 
+#footer {
+    padding: 0;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -228,9 +232,6 @@ section.dark a {
         padding-top: 75px;
     }
 
-    #footer {
-        padding: 0;
-    }
 }
 
 #portfolio .portfolio-item {

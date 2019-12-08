@@ -1,24 +1,34 @@
-- name: Faculty
-  members:
-    - name: Yiying Zhang
-      imageFile: Yiying.jpg
-      link: https://cseweb.ucsd.edu/~yiying/
+currentMembers:
+  - name: Faculty
+    members:
+      - name: Yiying Zhang
+        imageFile: Yiying.jpg
+        link: https://cseweb.ucsd.edu/~yiying/
 
-- name: Ph.D Students
-  members:
-    - name: Yizhou Shan
-      imageFile: Yizhou.jpg
-      link: http://lastweek.io/
-    - name: Zhiyuan Guo
-      imageFile: Zhiyuan.jpg
+  - name: Ph.D Students
+    members:
+      - name: Yizhou Shan
+        imageFile: Yizhou.jpg
+        link: http://lastweek.io/
+      - name: Zhiyuan Guo
+        imageFile: Zhiyuan.jpg
 
-- name: Master Students
-  members:
-    - name: Yutong Huang
-      imageFile: Yutong.jpg
-    - name: Xuhao Luo
-      imageFile: Xuhao.jpg
-    - name: Haolan Liu
-      imageFile: Haolan.jpg
-      link: http://LiuHaolan.github.io
+  - name: Master Students
+    members:
+      - name: Yutong Huang
+        imageFile: Yutong.jpg
+      - name: Xuhao Luo
+        imageFile: Xuhao.jpg
+      - name: Haolan Liu
+        imageFile: Haolan.jpg
+        link: http://LiuHaolan.github.io
 
+alumnus:
+  - name: PhD
+    members:
+      - name: Shinyeh Tsai
+        gradYear: 2019
+        affiliation: Research Scientist @ Facebook
+        link: https://www.cs.purdue.edu/homes/tsai46/
+     
+        
