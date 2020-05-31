@@ -1,5 +1,19 @@
 - name: Conferences and Journals
   entries:
+    - link: 
+      title: "Disaggregating Persistent Memory and Controlling Them from Remote: An Exploration of Passive Disaggregated Key-Value Stores"
+      author: Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
+      conference: 2020 USENIX Annual Technical Conference
+      abbreviation: "USENIX ATC '20"
+      tag: [net, arch]
+
+    - link: 
+      title: "Understanding Memory and Thread Safety Practices and Issues in Real-World Rust Programs"
+      author: Boqin Qin*, Yilun Chen*, Zeming Yu, Linhai Song, Yiying Zhang (* co-first authors)
+      conference: The ACM SIGPLAN Conference on Programming Language Design and Implementation 2020
+      abbreviation: "PLDI '20"
+      tag: [pl]
+
     - link: https://cseweb.ucsd.edu/~yiying/LearnedOS-OSR19.pdf
       title: "\"Learned\" Operating Systems"
       author: Yiying Zhang, Yutong Huang
