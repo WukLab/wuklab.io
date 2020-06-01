@@ -12,24 +12,33 @@ currentMembers:
         link: http://lastweek.io/
       - name: Zhiyuan Guo
         imageFile: Zhiyuan.jpg
+      - name: Yutong Huang
+        imageFile: Yutong.jpg
 
   - name: Master Students
     members:
-      - name: Yutong Huang
-        imageFile: Yutong.jpg
       - name: Xuhao Luo
         imageFile: Xuhao.jpg
         link: stuart0l.github.io
-      - name: Haolan Liu
-        imageFile: Haolan.jpg
-        link: http://LiuHaolan.github.io
 
-alumnus:
+alumni:
   - name: PhD
     members:
       - name: Shinyeh Tsai
         gradYear: 2019
         affiliation: Research Scientist @ Facebook
         link: https://www.cs.purdue.edu/homes/tsai46/
+     
+  - name: Master
+    members:
+      - name: Linzhe Li
+        gradYear: 2016
+        affiliation: Qualcomm
+      - name: Sumukh Hallymysore
+        gradYear: 2017
+        affiliation: Qualcomm
+      - name: Yilun Chen
+        gradYear: 2020
+        affiliation: HoneycombData
      
         

@@ -7,7 +7,7 @@
       abbreviation: "USENIX ATC '20"
       tag: [net, arch]
 
-    - link: 
+    - link: https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf 
       title: "Understanding Memory and Thread Safety Practices and Issues in Real-World Rust Programs"
       author: Boqin Qin*, Yilun Chen*, Zeming Yu, Linhai Song, Yiying Zhang (* co-first authors)
       conference: The ACM SIGPLAN Conference on Programming Language Design and Implementation 2020
