@@ -19,7 +19,7 @@ currentMembers:
     members:
       - name: Xuhao Luo
         imageFile: Xuhao.jpg
-        link: stuart0l.github.io
+        link: https://stuart0l.github.io
 
 alumni:
   - name: PhD
@@ -40,5 +40,3 @@ alumni:
       - name: Yilun Chen
         gradYear: 2020
         affiliation: HoneycombData
-     
-        

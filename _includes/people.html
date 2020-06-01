@@ -62,11 +62,11 @@
         </div>
 
         <!-- Alumnus -->
-        <div class="row alumnus mt-3">
+        <div class="row alumni mt-3">
         <div class="col-12">
             <h4>Alumnus</h4>
         </div>
-        {% for type in site.data.people.alumnus %}
+        {% for type in site.data.people.alumni%}
         {% for person in type.members %}
             <div class="col-12">
                 <span class="my-2"><b>{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</b> ({{ type.name }} {{ person.gradYear }}), now {{ person.affiliation }}</span>
