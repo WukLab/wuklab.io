@@ -1,28 +1,30 @@
-## Installation and Usage
+# README
 
-### Ubuntu
-install jekyll by:
-https://jekyllrb.com/docs/installation/ubuntu/
+## How to update website
 
-install bundle
+It's very simple to make changes: update files in `_data/`,
+push to master, and Github will build pages.
+
+If you see something went wrong, grep keyword and check if it's css related.
+
+## How to setup local testing envionment
+
+1. Install jekyll: https://jekyllrb.com/docs/installation/ubuntu/
+
+2. Install bundle
 ```
 bundle install
 ```
 
-After making your modifies,
-build and run your website in localhost by:
+After making your modifies, build and run _locally_:
 ```
 bundle exec jekyll server
 ```
-Then visit localhost:4000 in your explorer
 
-replace _site directory with wuklab.github.io and upload
-
-Visit a new Wuklab!
+Then visit `localhost:4000`.
 
 ### Mac
 https://jekyllrb.com/docs/installation/macos/
-
 
 ## Some tips
 Jekyll concatenates the _include directory and makes our webpage
