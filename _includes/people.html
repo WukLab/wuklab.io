@@ -16,10 +16,10 @@
                 <div class="col-2 px-3">
                     <h4>Faculty</h3>
                 </div>
-                <div class="col-4 px-3">
-                    <h4>Ph.D Students</h3>
-                </div>
                 <div class="col-6 px-3">
+                    <h4>Ph.D. Students</h3>
+                </div>
+                <div class="col-2 px-3">
                     <h4>Master Students</h3>
                 </div>
             </div>
@@ -69,7 +69,7 @@
         {% for type in site.data.people.alumni%}
         {% for person in type.members %}
             <div class="col-12">
-                <span class="my-2"><b>{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</b> ({{ type.name }} {{ person.gradYear }}), now {{ person.affiliation }}</span>
+                <span class="my-2">{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %} ({{ type.name }} {{ person.gradYear }}), {{ person.affiliation }}</span>
             </div>
         {% endfor %}
         {% endfor %}

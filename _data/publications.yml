@@ -5,7 +5,7 @@
       author: Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
       conference: 2020 USENIX Annual Technical Conference
       abbreviation: "USENIX ATC '20"
-      tag: [net, arch]
+      tag: [serverless, arch]
 
     - link: https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf 
       title: "Understanding Memory and Thread Safety Practices and Issues in Real-World Rust Programs"
