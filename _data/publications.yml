@@ -1,7 +1,7 @@
 - name: Conferences and Journals
   entries:
-    - link: 
-      title: "Disaggregating Persistent Memory and Controlling Them from Remote: An Exploration of Passive Disaggregated Key-Value Stores"
+    - link: http://lastweek.io/pubs/ATC20-DPM.pdf
+      title: "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
       author: Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
       conference: 2020 USENIX Annual Technical Conference
       abbreviation: "USENIX ATC '20"
@@ -29,7 +29,7 @@
       tag: [sec, net]
 
     
-    - link: https://arxiv.org/abs/1902.02411
+    - link: http://lastweek.io/pubs/SYSTOR19-Storm.pdf
       title: "Storm: A Fast Transactional Dataplane for Remote Data Structures"
       author: Stanko Novakovic, Yizhou Shan, Aasheesh Kolli, Michael Cui, Yiying Zhang, Haggai Eran, Liran Liss, Michael Wei, Dan Tsafrir, Marcos Aguilera
       conference: Proceedings of the 12th ACM International Systems and Storage Conference
@@ -75,19 +75,20 @@
     - link:         https://cseweb.ucsd.edu/~yiying/one-sided-security.pdf
       title:        "A Double-Edged Sword: Security Threats and Opportunities in One-Sided Network Communication"
       author:       Shin-Yeh Tsai, Yiying Zhang
-      conference:   To appear at the 11th USENIX Workshop on Hot Topics in Cloud Computing 
+      conference:   11th USENIX Workshop on Hot Topics in Cloud Computing 
       abbreviation: "HotCloud '19"
       tag: [sec, net]
       
-    - title:        Challenges in Building and Deploying Disaggregated Persistent Memory
+    - link:         http://lastweek.io/pubs/NVMW19-DPM.pdf
+      title:        Challenges in Building and Deploying Disaggregated Persistent Memory
       author:       Yizhou Shan, Yutong Huang, Yiying Zhang
-      conference:   to appear at the 9th Annual Non-Volatile Memories Workshop 
+      conference:   the 9th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
       tag: [serverless, arch]
       
     - title:        Building Atomic, Crash-Consistent Data Stores with Disaggregated Persistent Memory
       author:       Shin-Yeh Tsai, Yiying Zhang
-      conference:   to appear at the 9th Annual Non-Volatile Memories Workshop 
+      conference:   the 9th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
       tag: [serverless, arch, net]
      
