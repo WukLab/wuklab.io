@@ -33,7 +33,13 @@ alumni:
     members:
       - name: Yilun Chen
         gradYear: 2020
-        affiliation: HoneycombData
+        affiliation: Honeycomb Data
+      - name: Shushan Ashutosh
+        gradYear: 2020
+        affiliation: Samsung
+      - name: Xiaoyu Liu
+        gradYear: 2018
+        affiliation: Oracle
       - name: Sumukh Hallymysore
         gradYear: 2017
         affiliation: Qualcomm

@@ -83,13 +83,13 @@
     - link:         http://lastweek.io/pubs/NVMW19-DPM.pdf
       title:        Challenges in Building and Deploying Disaggregated Persistent Memory
       author:       Yizhou Shan, Yutong Huang, Yiying Zhang
-      conference:   the 9th Annual Non-Volatile Memories Workshop 
+      conference:   the 10th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
       tag: [serverless, arch]
       
     - title:        Building Atomic, Crash-Consistent Data Stores with Disaggregated Persistent Memory
       author:       Shin-Yeh Tsai, Yiying Zhang
-      conference:   the 9th Annual Non-Volatile Memories Workshop 
+      conference:   the 10th Annual Non-Volatile Memories Workshop 
       abbreviation: "NVMW '19"
       tag: [serverless, arch, net]
      
