@@ -14,6 +14,9 @@ currentMembers:
         imageFile: Zhiyuan.jpg
       - name: Yutong Huang
         imageFile: Yutong.jpg
+      - name: Zac Blanco
+        imageFile: zac.jpg
+        link: https://blanco.io
 
   - name: Master Students
     members:
