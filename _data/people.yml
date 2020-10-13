@@ -17,6 +17,8 @@ currentMembers:
       - name: Zac Blanco
         imageFile: zac.jpg
         link: https://blanco.io
+      - name: Will Lin
+        imageFile: will.jpg
 
   - name: Master Students
     members:
@@ -31,7 +33,7 @@ alumni:
         gradYear: 2019
         affiliation: Research Scientist @ Facebook
         link: https://www.cs.purdue.edu/homes/tsai46/
-     
+
   - name: Master
     members:
       - name: Yilun Chen
