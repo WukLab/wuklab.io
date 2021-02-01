@@ -73,6 +73,13 @@
 - name: Workshop
   entries:
 
+    - link:         https://www.usenix.org/conference/atc20/presentation/tsai
+      title:        "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
+      author:       Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
+      conference:   the 12th Annual Non-Volatile Memories Workshop 
+      abbreviation: "NVMW '21"
+      tag: [pm]
+
     - link:         https://cseweb.ucsd.edu/~yiying/one-sided-security.pdf
       title:        "A Double-Edged Sword: Security Threats and Opportunities in One-Sided Network Communication"
       author:       Shin-Yeh Tsai, Yiying Zhang
