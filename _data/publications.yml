@@ -73,6 +73,13 @@
 - name: Workshop
   entries:
 
+    - link:         https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-zhang.pdf
+      title:        "User-Defined Cloud"
+      author:       Yiying Zhang, Ardalan Amiri Sani, Guoqing Harry Xu
+      conference:   The 18th Workshop on Hot Topics in Operating Systems
+      abbreviation: "HotOS '21"
+      tag: [net,cloud]
+
     - link:         https://www.usenix.org/conference/atc20/presentation/tsai
       title:        "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
       author:       Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
