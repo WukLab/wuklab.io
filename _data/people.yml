@@ -15,11 +15,12 @@ currentMembers:
       - name: Yutong Huang
         imageFile: Yutong.jpg
 
-  - name: Master Students
+  - name: Undergraduate Students
     members:
-      - name: Xuhao Luo
-        imageFile: Xuhao.jpg
-        link: https://stuart0l.github.io
+      - name: Jinmou Li
+        imageFile: Jinmou.png
+      - name: Ryan Kosta
+        imageFile: Ryan.jpg
 
 alumni:
   - name: PhD
@@ -31,6 +32,9 @@ alumni:
      
   - name: Master
     members:
+      - name: Xuhao Luo
+        gradYear: 2021
+        affiliation: UIUC PhD program
       - name: Yilun Chen
         gradYear: 2020
         affiliation: Honeycomb Data
