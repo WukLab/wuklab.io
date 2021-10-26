@@ -1,6 +1,6 @@
 - name: Conferences and Journals
   entries:
-    - link: https://cseweb.ucsd.edu/~yiying/pDPM-ATC20.pdf
+    - link: https://www.usenix.org/conference/atc20/presentation/tsai
       title: "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
       author: Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
       conference: 2020 USENIX Annual Technical Conference
@@ -72,6 +72,20 @@
      
 - name: Workshop
   entries:
+
+    - link:         https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-zhang.pdf
+      title:        "User-Defined Cloud"
+      author:       Yiying Zhang, Ardalan Amiri Sani, Guoqing Harry Xu
+      conference:   The 18th Workshop on Hot Topics in Operating Systems
+      abbreviation: "HotOS '21"
+      tag: [net,cloud]
+
+    - link:         https://www.usenix.org/conference/atc20/presentation/tsai
+      title:        "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
+      author:       Shin-Yeh Tsai, Yizhou Shan, Yiying Zhang
+      conference:   the 12th Annual Non-Volatile Memories Workshop 
+      abbreviation: "NVMW '21"
+      tag: [pm]
 
     - link:         https://cseweb.ucsd.edu/~yiying/one-sided-security.pdf
       title:        "A Double-Edged Sword: Security Threats and Opportunities in One-Sided Network Communication"

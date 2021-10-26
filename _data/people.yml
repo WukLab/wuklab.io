@@ -14,6 +14,11 @@ currentMembers:
         imageFile: Zhiyuan.jpg
       - name: Yutong Huang
         imageFile: Yutong.jpg
+      - name: Zac Blanco
+        imageFile: zac.jpg
+        link: https://blanco.io
+      - name: Will Lin
+        imageFile: will.jpg
 
   - name: Undergraduate Students
     members:
@@ -25,11 +30,11 @@ currentMembers:
 alumni:
   - name: PhD
     members:
-      - name: Shinyeh Tsai
+      - name: Shin-Yeh Tsai
         gradYear: 2019
         affiliation: Research Scientist @ Facebook
-        link: https://www.cs.purdue.edu/homes/tsai46/
-     
+        link: https://shinyehtsai.github.io/
+
   - name: Master
     members:
       - name: Xuhao Luo

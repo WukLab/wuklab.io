@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Member</h2>
+                <h2>Members</h2>
                 <hr class="star-light">
             </div>
         </div>
@@ -12,32 +12,22 @@
         <!-- for larger devices -->
         <div class="d-none d-md-block">
 
+            {% for type in site.data.people.currentMembers %}
             <div class="row">
-                <div class="col-2 px-3">
-                    <h4>Faculty</h3>
-                </div>
-                <div class="col-6 px-3">
-                    <h4>Ph.D. Students</h3>
-                </div>
-                <div class="col-2 px-3">
-                    <h4>Master Students</h3>
+                <div class="">
+                    <h4>{{type.name}}</h3>
                 </div>
             </div>
-
             <div class="row">
-            {% for type in site.data.people.currentMembers %}
-                <!-- Generate link or div -->
                 {% for person in type.members %}
                   <div class="col-xs-4 col-md-2 px-1">
-
-                    <img class="img-fluid member-avatar" src="{{ person.imageFile | prepend: 'img/member/' }}">
-
-                    <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
-                  </div>
+                      <img class="img-fluid member-avatar" src="{{ person.imageFile | prepend: 'img/member/' }}">
+                      <h6 class="my-2"> {% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}</h5>
+                    </div>
                 {% endfor %}
+            </div>
 
             {% endfor %}
-            </div>
         </div>
 
         <!-- for smaller devices -->
