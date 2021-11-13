@@ -25,17 +25,18 @@ and we improve hardware experiences with software flexibility.
 <hr>
 <hr>
 
-
 	<div class="row-fluid">
-	  <h3>Virtualized FPGA Cloud Services</h3>
+	  <h3>Disaggregating and Consolidating Network Functionalities with SuperNIC</h3>
           <div class="span6">
         	<p class="text-left">
-
-We are building a virtualization layer on FPGA to improve the flexibility, programmability,
-utilization, and safety of FPGA acceleration as a cloud service.
-		</p>
-          <p>
-Stay tuned for more details.
+We, for the first
+time, demonstrate how to disaggregate network resources by
+proposing a new distributed hardware framework called <b>SuperNIC</b>. 
+Each SuperNIC connects a small set of endpoints
+and consolidates network functionalities for these endpoints.
+We prototyped SuperNIC with FPGA and demonstrate its
+performance and cost benefits with real network functions
+and customized disaggregated applications.
 		</p>
 	  </div>
 	</div>
@@ -43,53 +44,36 @@ Stay tuned for more details.
       <hr>
 
 	<div class="row-fluid">
-	  <h3>Hardware-Based Disaggregated Memory Services</h3>
+	  <h3>Disaggregating Memory: A Hardware Aproach with Clio</h3>
           <div class="span6">
         	<p class="text-left">
-
-We are building a hardware platform which provides disaggregated and distributed memory services
-to both existing datacenter servers and disaggregated processors.
-Our hardware-based disaggregated memory services can be accessed by virtual memory interface,
-key-value store interface, and other customized interfaces.
+Memory disaggregation has attracted great attention recently
+because of its benefits in efficient memory utilization and
+ease of management. So far, memory disaggregation research has all taken one of two approaches, building/emulating memory nodes with either regular servers or raw memory
+devices with no processing power. The former incurs higher
+monetary cost and face tail latency and scalability limitations, while the latter introduce performance, security, and
+management problems.
 		</p>
           <p>
-Stay tuned for more details.
+We seek a sweet spot in the middle of these two extremes by proposing, for the first time, a hardware-based
+memory disaggregation solution that has the right amount
+of processing power at memory nodes. 
+We built a hardware-based disaggregated memory system called <b>Clio</b>, which 
+virtualizes and manages disaggregated memory at the memory node. Clio includes a new hardware-based
+virtual memory system, a customized network system, and a
+framework for computation offloading. In building Clio, we
+not only co-design OS functionalities, hardware architecture,
+and the network system, but also co-design the compute node
+and memory node. We prototyped Clio’s memory node with
+FPGA and implemented its client-node functionalities in a
+user-space library. Clio achieves 100 Gbps throughput and
+an end-to-end latency of 2.5 µs at median and 3.2 µs at the
+99th percentile. Clio scales much better and has orders of
+magnitude lower tail latency than RDMA, and it has 1.1× to
+3.4× energy saving compared to CPU-based and SmartNICbased disaggregated memory systems and is 2.7× faster than
+software-based SmartNIC solutions.
 		</p>
 	  </div>
-	</div>
-
-      <hr>
-
-	<div class="row-fluid">
-	  <h3>Disaggregated Persistent Memory</h3>
-          <div class="span6">
-        	<p class="text-left">
-One viable approach to deploy persistent memory (PM) in datacenters
-is to attach PM as self-contained devices to the network as disaggregated
-persistent memory, or <b>DPM</b>. DPM requires no changes
-to existing servers in datacenters; without the need to
-include a processor, DPM devices are cheap to build;
-and by sharing DPM across compute servers, they offer
-great elasticity and efficient resource packing.
-</p>
-<p>
-We propose three architectures of DPM: 1) compute nodes
-directly access DPM (DPM-Direct); 2) compute nodes
-send requests to a coordinator server, which then accesses
-DPM to complete a request (DPM-Central); and
-3) compute nodes directly access DPM for data operations
-and communicate with a global metadata server for
-the control plane (DPM-Sep). Based on these architectures,
-we built three atomic, crash-consistent data stores.
-</p>
-	  </div>
-<!--
-          <div class="span5">
-<p class="text-center">
-<img width="300" src="img/research/DPM.jpg" class="center">
-</p>
-	  </div>
--->
 	</div>
 
       <hr>

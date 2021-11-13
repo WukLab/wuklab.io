@@ -20,6 +20,22 @@ and using ML/AI to build systems.
 <hr>
 
 <div class="row-fluid">
+<h3>Systems-ML-Co-Designed DNN Training</h3>
+<div class="span6">
+<p class="text-left">
+Traditional DNN model and training method design is agnostic to how the underlying systems will run the training.
+As a result, today's DNN training still has huge room for improvement (e.g., being more GPU-memory efficient).
+We are investigating various ways to re-design DNN models and training methods that 
+are co-optimized with the underlying system.
+</p>
+<p>
+Stay tuned for more information.
+</p>
+</div>
+
+<hr>
+
+<div class="row-fluid">
 <h3>Using ML to Build OS</h3>
 <div class="span6">
 <p class="text-left">
