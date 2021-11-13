@@ -36,15 +36,11 @@ and new security solutions.
 	  <hr>
 
 	<div class="row-fluid">
-	  <h3>Serverless Computing on Disaggregated Resources</h3>
+	  <h3>Disaggregating Serverless Computing: A Resource-Centric Approach with Porus</h3>
           <div class="span6">
         	<p class="text-left">
 
 We are building a new serverless-computing platform on disaggregated resource clusters.
-Users can write functions just like traditional POSIX-compatible programs,
-with the additional support from our platform for managing application "states",
-IPC-like communication across functions,
-and improved security and QoS guarantees.
 		</p>
           <p>
 Stay tuned for more details.
@@ -55,17 +51,53 @@ Stay tuned for more details.
 	  <hr>
 
 	<div class="row-fluid">
-	  <h3>Hardware-Based Disaggregated Memory Services</h3>
+	  <h3>Disaggregating Network Functionalities: A Consolidation Approach with SuperNIC</h3>
           <div class="span6">
         	<p class="text-left">
+Prior resource disaggregation works including our own demonstrated how to disaggregate
+compute, memory, and storage resources. We, for the first
+time, demonstrate how to disaggregate network resources by
+proposing a new distributed hardware framework called <b>SuperNIC</b>. 
+Each SuperNIC connects a small set of endpoints
+and consolidates network functionalities for these endpoints.
+We prototyped SuperNIC with FPGA and demonstrate its
+performance and cost benefits with real network functions
+and customized disaggregated applications.
+		</p>
+	  </div>
+	</div>
 
-We are building a hardware platform which provides disaggregated and distributed memory services
-to both existing datacenter servers and disaggregated processors.
-Our hardware-based disaggregated memory services can be accessed by virtual memory interface,
-key-value store interface, and other customized interfaces.
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>Disaggregating Memory: A Hardware Aproach with Clio</h3>
+          <div class="span6">
+        	<p class="text-left">
+Memory disaggregation has attracted great attention recently
+because of its benefits in efficient memory utilization and
+ease of management. So far, memory disaggregation research has all taken one of two approaches, building/emulating memory nodes with either regular servers or raw memory
+devices with no processing power. The former incurs higher
+monetary cost and face tail latency and scalability limitations, while the latter introduce performance, security, and
+management problems.
 		</p>
           <p>
-Stay tuned for more details.
+We seek a sweet spot in the middle of these two extremes by proposing, for the first time, a hardware-based
+memory disaggregation solution that has the right amount
+of processing power at memory nodes. 
+We built a hardware-based disaggregated memory system called <b>Clio</b>, which 
+virtualizes and manages disaggregated memory at the memory node. Clio includes a new hardware-based
+virtual memory system, a customized network system, and a
+framework for computation offloading. In building Clio, we
+not only co-design OS functionalities, hardware architecture,
+and the network system, but also co-design the compute node
+and memory node. We prototyped Clio’s memory node with
+FPGA and implemented its client-node functionalities in a
+user-space library. Clio achieves 100 Gbps throughput and
+an end-to-end latency of 2.5 µs at median and 3.2 µs at the
+99th percentile. Clio scales much better and has orders of
+magnitude lower tail latency than RDMA, and it has 1.1× to
+3.4× energy saving compared to CPU-based and SmartNICbased disaggregated memory systems and is 2.7× faster than
+software-based SmartNIC solutions.
 		</p>
 	  </div>
 	</div>
@@ -73,21 +105,50 @@ Stay tuned for more details.
       <hr>
 
 	<div class="row-fluid">
-	  <h3>Network for Resource Disaggregation</h3>
+	  <h3>Disaggregating Persistent Memory: A Passive Approach with Clover</h3>
           <div class="span6">
         	<p class="text-left">
-The need to access remote resources and to access them fast demands a new network system for future disaggregated datacenters.
-We are building <b>LegoNET</b>, a new network system designed for adding disaggregated resources to
-existing datacenters in a non-disruptive way, while delivering low-latency, high-throughput performance
-and a flexible, easy-to-use interface.
-		</p>
+Existing disaggregated storage systems use hard disks or SSDs as storage media. Recently,
+the technology of persistent memory (PM) has matured and
+seen initial adoption in several datacenters. Disaggregating
+PM could enjoy the same benefits of traditional disaggregated storage systems, but it requires new designs because
+of its memory-like performance and byte addressability.
+</p>
+<p>
+We explore the design of disaggregating PM and managing them remotely from compute servers, a
+model we call passive disaggregated persistent memory, or <b>pDPM</b>. 
+Compared to the alternative of managing PM at storage servers, pDPM significantly lowers monetary and energy
+costs and avoids scalability bottlenecks at storage servers.
+We built three key-value store systems using the pDPM
+model. The first one lets all compute nodes directly access
+and manage storage nodes. The second uses a central coordinator to orchestrate the communication between compute
+and storage nodes. These two systems have various performance and scalability limitations. To solve these problems,
+we built <b>Clover</b>, a pDPM system that separates the location,
+communication mechanism, and management strategy of the
+data plane and the metadata/control plane. Compute nodes
+access storage nodes directly for data operations, while one
+or few global metadata servers handle all metadata/control
+operations. From our extensive evaluation of the three pDPM
+systems, we found Clover to be the best-performing pDPM
+system. Its performance under common datacenter workloads is similar to non-pDPM remote in-memory key-value
+store, while reducing CapEx and OpEx by 1.4× and 3.9×.
+</p>
 	  </div>
+<!--
+          <div class="span5">
+<p class="text-center">
+<img width="300" src="img/research/DPM.jpg" class="center">
+</p>
+	  </div>
+-->
 	</div>
+
 
       <hr>
 
+
 	<div class="row-fluid">
-	  <h3>Disaggregated Operating System</h3>
+	  <h3>Disaggregating Operating System: A SplitKernel Approach with LegoOS</h3>
 <!--
           <div class="span11">
 <div class="row">
@@ -154,40 +215,6 @@ and <a target="_blank" href="https://github.com/WukLab/LegoOS">get it here</a>.<
 	  </div>
 	  -->
 	  
-	</div>
-
-      <hr>
-
-	<div class="row-fluid">
-	  <h3>Disaggregated Persistent Memory</h3>
-          <div class="span6">
-        	<p class="text-left">
-One viable approach to deploy persistent memory (PM) in datacenters
-is to attach PM as self-contained devices to the network as disaggregated
-persistent memory, or <b>DPM</b>. DPM requires no changes
-to existing servers in datacenters; without the need to
-include a processor, DPM devices are cheap to build;
-and by sharing DPM across compute servers, they offer
-great elasticity and efficient resource packing.
-</p>
-<p>
-We propose three architectures of DPM: 1) compute nodes
-directly access DPM (DPM-Direct); 2) compute nodes
-send requests to a coordinator server, which then accesses
-DPM to complete a request (DPM-Central); and
-3) compute nodes directly access DPM for data operations
-and communicate with a global metadata server for
-the control plane (DPM-Sep). Based on these architectures,
-we built three atomic, crash-consistent data stores.
-</p>
-	  </div>
-<!--
-          <div class="span5">
-<p class="text-center">
-<img width="300" src="img/research/DPM.jpg" class="center">
-</p>
-	  </div>
--->
 	</div>
 
       <hr>
