@@ -20,6 +20,11 @@ currentMembers:
       - name: Will Lin
         imageFile: will.jpg
 
+  - name: Master Students
+    members:
+      - name: Bili Dong
+        imageFile: Bili.jpg
+
   - name: Undergraduate Students
     members:
       - name: Jinmou Li
