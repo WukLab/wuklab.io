@@ -43,6 +43,9 @@ alumni:
 
   - name: Master
     members:
+      - name: Zerui Wei
+        gradYear: 2021
+        affiliation: Snowflake
       - name: Xuhao Luo
         gradYear: 2021
         affiliation: UIUC PhD program
