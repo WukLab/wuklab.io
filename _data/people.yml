@@ -25,13 +25,15 @@ currentMembers:
     members:
       - name: Bili Dong
         imageFile: Bili.jpg
+      - name: Jinmou Li
+        imageFile: Jinmou.png
 
   - name: Undergraduate Students
     members:
-      - name: Jinmou Li
-        imageFile: Jinmou.png
       - name: Ryan Kosta
         imageFile: Ryan.jpg
+      - name: Viren Abhyankar
+        imageFile: Viren.png
 
 alumni:
   - name: PhD
