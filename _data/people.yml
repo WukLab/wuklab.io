@@ -35,14 +35,14 @@ currentMembers:
 alumni:
   - name: PhD
     members:
-      - name: Shin-Yeh Tsai
-        gradYear: 2019
-        affiliation: Research Scientist @ Facebook
-        link: https://shinyehtsai.github.io/
       - name: Yizhou Shan
         affiliation: TBD
         gradYear: 2022
         link: http://lastweek.io/
+      - name: Shin-Yeh Tsai
+        gradYear: 2019
+        affiliation: Research Scientist @ Facebook
+        link: https://shinyehtsai.github.io/
 
   - name: Master
     members:
