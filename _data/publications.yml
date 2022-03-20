@@ -81,6 +81,7 @@
       author:       Yizhou Shan, Shin-Yeh Tsai, Yiying Zhang
       conference:   Proceedings of the ACM Symposium on Cloud Computing 2017 
       abbreviation: "SoCC '17"
+      slide:        https://www.usenix.org/sites/default/files/conference/protected-files/osdi18_slides_shan.pdf
       tag: [arch]
           
      

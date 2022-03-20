@@ -7,9 +7,6 @@ currentMembers:
 
   - name: Ph.D Students
     members:
-      - name: Yizhou Shan
-        imageFile: Yizhou.jpg
-        link: http://lastweek.io/
       - name: Zhiyuan Guo
         imageFile: Zhiyuan.jpg
         link: https://depctg.github.io/
@@ -38,6 +35,10 @@ currentMembers:
 alumni:
   - name: PhD
     members:
+      - name: Yizhou Shan
+        affiliation: TBD
+        gradYear: 2022
+        link: http://lastweek.io/
       - name: Shin-Yeh Tsai
         gradYear: 2019
         affiliation: Research Scientist @ Facebook
