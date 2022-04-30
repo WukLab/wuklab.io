@@ -20,15 +20,15 @@ currentMembers:
 
   - name: Master Students
     members:
-      - name: Bili Dong
-        imageFile: Bili.jpg
       - name: Jinmou Li
         imageFile: Jinmou.png
+      - name: Bili Dong
+        imageFile: Bili.jpg
+      - name: Abhishek Vijeev
+        imageFile: Abhishek.jpeg
       - name: Rithvik Chandan
         imageFile: Rithvik.jpeg
         link: https://rithvikchan.github.io/
-      - name: Abhishek Vijeev
-        imageFile: Abhishek.jpeg
       - name: Zijian He
         imageFile: Zijian.jpg
       - name: Cheng-Hung He
