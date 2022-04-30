@@ -29,9 +29,9 @@ currentMembers:
         link: https://rithvikchan.github.io/
       - name: Abhishek Vijeev
         imageFile: Abhishek.jpeg
-      - name: Cheng-Hung He
       - name: Zijian He
         imageFile: Zijian.jpg
+      - name: Cheng-Hung He
 
   - name: Undergraduate Students
     members:
