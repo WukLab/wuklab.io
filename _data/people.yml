@@ -24,13 +24,20 @@ currentMembers:
         imageFile: Bili.jpg
       - name: Jinmou Li
         imageFile: Jinmou.png
+      - name: Rithvik Chandan
+        imageFile: Rithvik.jpeg
+        link: https://rithvikchan.github.io/
+      - name: Cheng-Hung He
+      - name: Zijian He
 
   - name: Undergraduate Students
     members:
       - name: Ryan Kosta
         imageFile: Ryan.jpg
       - name: Viren Abhyankar
-        imageFile: Viren.png
+        imageFile: Viren.jpg
+      - name: Tony Liu
+      - name: Pratyush Chand
 
 alumni:
   - name: PhD
