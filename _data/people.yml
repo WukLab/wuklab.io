@@ -31,6 +31,7 @@ currentMembers:
         imageFile: Abhishek.jpeg
       - name: Cheng-Hung He
       - name: Zijian He
+        imageFile: Zijian.jpg
 
   - name: Undergraduate Students
     members:
@@ -39,18 +40,19 @@ currentMembers:
       - name: Viren Abhyankar
         imageFile: Viren.jpg
       - name: Tony Liu
+        imageFile: Tony.jpg
       - name: Pratyush Chand
 
 alumni:
   - name: PhD
     members:
       - name: Yizhou Shan
-        affiliation: Huawei Cloud
+        affiliation: Research Scientist @ Huawei Cloud
         gradYear: 2022
         link: http://lastweek.io/
       - name: Shin-Yeh Tsai
         gradYear: 2019
-        affiliation: Research Scientist @ Facebook
+        affiliation: Research Scientist @ Meta
         link: https://shinyehtsai.github.io/
 
   - name: Master
