@@ -20,10 +20,6 @@ currentMembers:
 
   - name: Master Students
     members:
-      - name: Jinmou Li
-        imageFile: Jinmou.png
-      - name: Bili Dong
-        imageFile: Bili.jpg
       - name: Abhishek Vijeev
         imageFile: Abhishek.jpeg
       - name: Rithvik Chandan
@@ -59,6 +55,12 @@ alumni:
 
   - name: Master
     members:
+      - name: Bili Dong
+        gradYear: 2022
+	affiliation: Google
+      - name: Jinmou Li
+        gradYear: 2022
+	affiliation: Apple
       - name: Zerui Wei
         gradYear: 2021
         affiliation: Snowflake
