@@ -1,11 +1,32 @@
 - name: Conferences and Journals
   entries:
-#    - link: https://arxiv.org/pdf/2109.07744.pdf
-#      title: "Disaggregating and Consolidating Network Functionalities with SuperNIC"
-#      author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
-#      conference: arXiv:2109.07744
-#      abbreviation: "arXiv '21"
-#      tag: [serverless, net, arch]
+    - link: https://arxiv.org/abs/2206.13444
+      title: "Resource-Centric Serverless Computing"
+      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
+      conference: arXiv:2206.13444
+      abbreviation: "arXiv '22"
+      tag: [serverless, pl, cloud]
+
+    - link: https://arxiv.org/pdf/2109.07744.pdf
+      title: "Disaggregating and Consolidating Network Functionalities with SuperNIC"
+      author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
+      conference: arXiv:2109.07744
+      abbreviation: "arXiv '21"
+      tag: [serverless, net, arch]
+
+    - link: https://arxiv.org/abs/1901.01632
+      title: "Exploiting Network Loss for Distributed Approximate Computing with NetApprox"
+      author: Ke Liu, Jinmou Li, Shin-Yeh Tsai, Theophilus Benson, Yiying Zhang
+      conference: arXiv:1901.01632
+      abbreviation: "arXiv '19"
+      tag: [net]
+
+    - link: 
+      title: "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory"
+      author: Chenxi Wang, Yifan Qiao, Haoran Ma, Shi Liu, Yiying Zhang, Wenguang Chen, Ravi Netravali, Miryung Kim, Harry Xu
+      conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
+      abbreviation: "NSDI '23"
+      tag: [serverless]
 
     - link: https://arxiv.org/pdf/2108.03492.pdf
       title: "Clio: A Hardware-Software Co-Designed Disaggregated Memory System"
@@ -87,6 +108,13 @@
      
 - name: Workshop
   entries:
+
+    - link:         
+      title:        "Towards a Fully Disaggregated and Programmable Data Center"
+      author:       Yizhou Shan, Will Lin, Zhiyuan Guo, Yiying Zhang
+      conference:   to appear at the 13th ACM Asia-Pacific Workshop on Systems
+      abbreviation: "APSys '22"
+      tag: [net,serverless]
 
     - link:         https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-zhang.pdf
       title:        "User-Defined Cloud"
