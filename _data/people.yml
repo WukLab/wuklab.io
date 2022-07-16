@@ -57,10 +57,10 @@ alumni:
     members:
       - name: Bili Dong
         gradYear: 2022
-	affiliation: Google
+        affiliation: Google
       - name: Jinmou Li
         gradYear: 2022
-	affiliation: Apple
+        affiliation: Apple
       - name: Zerui Wei
         gradYear: 2021
         affiliation: Snowflake
