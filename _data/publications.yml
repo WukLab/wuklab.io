@@ -1,14 +1,14 @@
 - name: Conferences and Journals
   entries:
     - link: https://arxiv.org/abs/2206.13444
-      title: "Resource-Centric Serverless Computing"
+      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
       author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
       conference: arXiv:2206.13444
       abbreviation: "arXiv '22"
       tag: [serverless, pl, cloud]
 
     - link: https://arxiv.org/pdf/2109.07744.pdf
-      title: "Disaggregating and Consolidating Network Functionalities with SuperNIC"
+      title: "SuperNIC: A Hardware-Based, Programmable, and Multi-Tenant SmartNIC"
       author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
       conference: arXiv:2109.07744
       abbreviation: "arXiv '21"
@@ -20,6 +20,13 @@
       conference: arXiv:1901.01632
       abbreviation: "arXiv '19"
       tag: [net]
+
+    - link: 
+      title: "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony"
+      author: Yifan Qiao, Chenxi Wang, Zhenyuan Ruan, Adam Belay, Qingda Lu, Yiying Zhang, Miryung Kim, Harry Xu
+      conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
+      abbreviation: "NSDI '23"
+      tag: [serverless]
 
     - link: 
       title: "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory"
