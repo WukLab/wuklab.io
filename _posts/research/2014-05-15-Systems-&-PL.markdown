@@ -24,6 +24,18 @@ and by building tools that can help programmers avoid or detect bugs.
 <hr>
 
 <div class="row-fluid">
+<h3>Co-Optimizing Compilers and Execution Systems for Far Memory</h3>
+<div class="span6">
+<p class="text-left">
+Far memory, where memory accesses go to memory on remote servers, has become more popular in recent years as a solution to expand memory size and avoid memory stranding. Prior far memory systems have taken two approaches: transparently swap memory pages between local and far memory, and utilizing new programming models to move fine-grained data between local and far memory. The former requires no program changes but comes with performance penalty, while the latter requires significant program changes, though with increased performance.
+</p>
+<p>
+We propose a compiler-system co-designed far-memory system called Cocas. Cocas statically generates code for far-memory accesses and computation offloading. It monitors the execution of compiled applications on our customized far-memory execution platform. Based on profiling results and far-memory system environments, Cocas dynamically optimizes both the compiler and the execution system. Cocas outperforms prior swap-based and programming-model-based systems because it considers program semantics, system environments, and profiled application execution together, as our results demonstrate.
+</p>
+</div>
+</div>
+
+<div class="row-fluid">
 <h3>Empirical Study on Rust Safety Bugs</h3>
 <div class="span6">
 <p class="text-left">
