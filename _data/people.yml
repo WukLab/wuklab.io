@@ -12,23 +12,14 @@ currentMembers:
         link: https://depctg.github.io/
       - name: Yutong Huang
         imageFile: Yutong.jpg
-      - name: Zac Blanco
-        imageFile: zac.jpg
-        link: https://blanco.io
       - name: Will Lin
         imageFile: will.jpg
 
   - name: Master Students
     members:
-      - name: Abhishek Vijeev
-        imageFile: Abhishek.jpeg
-      - name: Rithvik Chandan
-        imageFile: Rithvik.jpeg
-        link: https://rithvikchan.github.io/
       - name: Zijian He
         imageFile: Zijian.jpg
-      - name: Cheng-Hung He
-        imageFile: Yuki.jpg
+      - name: Yi Rong
 
   - name: Undergraduate Students
     members:
@@ -36,8 +27,6 @@ currentMembers:
         imageFile: Ryan.jpg
       - name: Viren Abhyankar
         imageFile: Viren.jpg
-      - name: Tony Liu
-        imageFile: Tony.jpg
       - name: Pratyush Chand
         imageFile: Pratyush.jpg
 
@@ -55,6 +44,8 @@ alumni:
 
   - name: Master
     members:
+      - name: Zac Blanco
+        gradYear: 2023
       - name: Bili Dong
         gradYear: 2022
         affiliation: Google
