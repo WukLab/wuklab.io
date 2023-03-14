@@ -25,6 +25,7 @@ currentMembers:
     members:
       - name: Ryan Kosta
         imageFile: Ryan.jpg
+	link: https://ryankosta.com/
       - name: Reyna Abhyankar
         imageFile: Reyna.png
       - name: Pratyush Chand
