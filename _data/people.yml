@@ -24,7 +24,7 @@ currentMembers:
   - name: Undergraduate Students
     members:
       - name: Ryan Kosta
-        imageFile: Ryan.jpg
+	imageFile: Ryan.jpg
 	link: https://ryankosta.com/
       - name: Reyna Abhyankar
         imageFile: Reyna.png
