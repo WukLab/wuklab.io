@@ -8,27 +8,6 @@
       abbreviation: "SOSP '23"
       tag: [serverless, pl]
 
-    - link: https://arxiv.org/abs/2206.13444
-      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
-      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
-      conference: arXiv:2206.13444
-      abbreviation: "arXiv '22"
-      tag: [serverless, pl, cloud]
-
-    - link: https://arxiv.org/pdf/2109.07744.pdf
-      title: "SuperNIC: A Hardware-Based, Programmable, and Multi-Tenant SmartNIC"
-      author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
-      conference: arXiv:2109.07744
-      abbreviation: "arXiv '21"
-      tag: [serverless, net, arch]
-
-    - link: https://arxiv.org/abs/1901.01632
-      title: "Exploiting Network Loss for Distributed Approximate Computing with NetApprox"
-      author: Ke Liu, Jinmou Li, Shin-Yeh Tsai, Theophilus Benson, Yiying Zhang
-      conference: arXiv:1901.01632
-      abbreviation: "arXiv '19"
-      tag: [net]
-
     - link: https://www.usenix.org/conference/nsdi23/presentation/qiao
       title: "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony"
       author: Yifan Qiao, Chenxi Wang, Zhenyuan Ruan, Adam Belay, Qingda Lu, Yiying Zhang, Miryung Kim, Harry Xu
@@ -49,6 +28,20 @@
       conference: Proceedings of the 27th International Conference on Architectural Support for Programming Languages and Operating Systems
       abbreviation: "ASPLOS '22"
       tag: [serverless, arch]
+
+    - link: https://arxiv.org/abs/2206.13444
+      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
+      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
+      conference: arXiv:2206.13444
+      abbreviation: "arXiv '22"
+      tag: [serverless, pl, cloud]
+
+    - link: https://arxiv.org/pdf/2109.07744.pdf
+      title: "SuperNIC: A Hardware-Based, Programmable, and Multi-Tenant SmartNIC"
+      author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
+      conference: arXiv:2109.07744
+      abbreviation: "arXiv '21"
+      tag: [serverless, net, arch]
 
     - link: https://www.usenix.org/conference/atc20/presentation/tsai
       title: "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
@@ -97,6 +90,13 @@
       tag: [pl]
 
     
+    - link: https://arxiv.org/abs/1901.01632
+      title: "Exploiting Network Loss for Distributed Approximate Computing with NetApprox"
+      author: Ke Liu, Jinmou Li, Shin-Yeh Tsai, Theophilus Benson, Yiying Zhang
+      conference: arXiv:1901.01632
+      abbreviation: "arXiv '19"
+      tag: [net]
+
     - link:         https://www.usenix.org/system/files/osdi18-shan.pdf
       title:        "LegoOS: A Disaggregated, Distributed OS for Hardware Resource Disaggregation"
       author:       Yizhou Shan, Yutong Huang, Yilun Chen, Yiying Zhang
