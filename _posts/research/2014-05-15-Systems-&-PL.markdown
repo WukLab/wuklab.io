@@ -23,6 +23,21 @@ and by building tools that can help programmers avoid or detect bugs.
 <hr>
 <hr>
 
+
+	<div class="row-fluid">
+	  <h3>Disaggregation and Program Behavior: A Static-Runtime-Codesign Approach with Mira</h3>
+          <div class="span6">
+        	<p class="text-left">
+Far memory, where memory accesses go to memory on remote servers, has become more popular in recent years as a solution to expand memory size and avoid memory stranding. Prior far memory systems have taken two approaches: transparently swap memory pages between local and far memory, and utilizing new programming models to move fine-grained data between local and far memory. The former requires no program changes but comes with performance penalty, while the latter requires significant program changes, though with increased performance.
+		</p>
+          <p>
+We propose a far-memory system that co-designs static program analysis and compilation with run-time systems, called Mira. Mira utilizes program analysis results, profiled execution information, and system environments together to guide code compilation and system configurations for far memory. Our evaluation shows that Mira outperforms prior swap-based and programming-model-based systems up to 18 times.
+		</p>
+	  </div>
+	</div>
+
+	  <hr>
+
 <div class="row-fluid">
 <h3>Co-Optimizing Compilers and Execution Systems for Far Memory</h3>
 <div class="span6">
@@ -34,6 +49,8 @@ We propose a compiler-system co-designed far-memory system called Cocas. Cocas s
 </p>
 </div>
 </div>
+
+<hr>
 
 <div class="row-fluid">
 <h3>Empirical Study on Rust Safety Bugs</h3>
