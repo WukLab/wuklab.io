@@ -1,5 +1,13 @@
 - name: Conferences and Journals
   entries:
+
+    - link: 
+      title: "Mira: A Program-Behavior-Guided Far Memory System"
+      author: Zhiyuan Guo, Zijian He, Yiying Zhang
+      conference: to appear at the Proceedings of the 29th ACM Symposium on Operating Systems Principles
+      abbreviation: "SOSP '23"
+      tag: [serverless, pl]
+
     - link: https://arxiv.org/abs/2206.13444
       title: "Decomposing and Executing Serverless Applications as Resource Graphs"
       author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
@@ -21,14 +29,14 @@
       abbreviation: "arXiv '19"
       tag: [net]
 
-    - link: 
+    - link: https://www.usenix.org/conference/nsdi23/presentation/qiao
       title: "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony"
       author: Yifan Qiao, Chenxi Wang, Zhenyuan Ruan, Adam Belay, Qingda Lu, Yiying Zhang, Miryung Kim, Harry Xu
       conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '23"
       tag: [serverless]
 
-    - link: 
+    - link: https://www.usenix.org/conference/nsdi23/presentation/wang-chenxi
       title: "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory"
       author: Chenxi Wang, Yifan Qiao, Haoran Ma, Shi Liu, Yiying Zhang, Wenguang Chen, Ravi Netravali, Miryung Kim, Harry Xu
       conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
