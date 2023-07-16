@@ -19,13 +19,12 @@ currentMembers:
     members:
       - name: Zijian He
         imageFile: Zijian.jpg
-      - name: Yi Rong
 
   - name: Undergraduate Students
     members:
       - name: Ryan Kosta
-	imageFile: Ryan.jpg
-	link: https://ryankosta.com/
+        imageFile: Ryan.jpg
+        link: https://ryankosta.com/
       - name: Reyna Abhyankar
         imageFile: Reyna.png
       - name: Pratyush Chand
