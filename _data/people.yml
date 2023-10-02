@@ -38,7 +38,7 @@ alumni:
         link: http://lastweek.io/
       - name: Shin-Yeh Tsai
         gradYear: 2019
-        affiliation: Research Scientist @ Meta
+        affiliation: Research Scientist @ Meta => Engineer @ Databricks
         link: https://shinyehtsai.github.io/
 
   - name: Master
