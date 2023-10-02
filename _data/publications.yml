@@ -1,7 +1,7 @@
 - name: Conferences and Journals
   entries:
 
-    - link: 
+    - link: https://cseweb.ucsd.edu/~yiying/Mira-SOSP23.pdf
       title: "Mira: A Program-Behavior-Guided Far Memory System"
       author: Zhiyuan Guo, Zijian He, Yiying Zhang
       conference: to appear at the Proceedings of the 29th ACM Symposium on Operating Systems Principles

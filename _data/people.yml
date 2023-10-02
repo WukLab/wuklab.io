@@ -14,19 +14,18 @@ currentMembers:
         imageFile: Yutong.jpg
       - name: Will Lin
         imageFile: will.jpg
-
-  - name: Master Students
-    members:
       - name: Zijian He
         imageFile: Zijian.jpg
+      - name: Reyna Abhyankar
+        imageFile: Reyna.png
+      - name: Vikranth Srivatsa
+
 
   - name: Undergraduate Students
     members:
       - name: Ryan Kosta
         imageFile: Ryan.jpg
         link: https://ryankosta.com/
-      - name: Reyna Abhyankar
-        imageFile: Reyna.png
       - name: Pratyush Chand
         imageFile: Pratyush.jpg
 
