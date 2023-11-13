@@ -4,27 +4,34 @@
     - link: https://cseweb.ucsd.edu/~yiying/Mira-SOSP23.pdf
       title: "Mira: A Program-Behavior-Guided Far Memory System"
       author: Zhiyuan Guo, Zijian He, Yiying Zhang
-      conference: to appear at the Proceedings of the 29th ACM Symposium on Operating Systems Principles
+      conference: Proceedings of the 29th ACM Symposium on Operating Systems Principles
       abbreviation: "SOSP '23"
       tag: [serverless, pl]
+
+    - link: https://cseweb.ucsd.edu/~yiying/SIGOPS-OSR-Yiying-Disaggregation.pdf
+      title: "Make It Real: An End-to-End Implementation of A Physically Disaggregated Data Center"
+      author: Yiying Zhang
+      conference: ACM SIGOPS Operating Systems Review 57(1): 1-9 (2023)
+      abbreviation: "OSR '23"
+      tag: [serverless]
 
     - link: https://www.usenix.org/conference/nsdi23/presentation/qiao
       title: "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony"
       author: Yifan Qiao, Chenxi Wang, Zhenyuan Ruan, Adam Belay, Qingda Lu, Yiying Zhang, Miryung Kim, Harry Xu
-      conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
+      conference: Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '23"
       tag: [serverless]
 
     - link: https://www.usenix.org/conference/nsdi23/presentation/wang-chenxi
       title: "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory"
       author: Chenxi Wang, Yifan Qiao, Haoran Ma, Shi Liu, Yiying Zhang, Wenguang Chen, Ravi Netravali, Miryung Kim, Harry Xu
-      conference: to appear at the 20th USENIX Symposium on Networked Systems Design and Implementation
+      conference: Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '23"
       tag: [serverless]
 
     - link: https://arxiv.org/pdf/2108.03492.pdf
       title: "Clio: A Hardware-Software Co-Designed Disaggregated Memory System"
-      author: Zhiyuan Guo*, Yizhou Shan*, Xuhao Luo, Yutong Huang, Yiying Zhang (* co-first authors)
+      author: Zhiyuan Guo*, Yizhou Shan*, Xuhao Luo, Yutong Huang, Yiying Zhang (* equal contribution)
       conference: Proceedings of the 27th International Conference on Architectural Support for Programming Languages and Operating Systems
       abbreviation: "ASPLOS '22"
       tag: [serverless, arch]
