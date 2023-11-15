@@ -11,7 +11,7 @@
     - link: https://cseweb.ucsd.edu/~yiying/SIGOPS-OSR-Yiying-Disaggregation.pdf
       title: "Make It Real: An End-to-End Implementation of A Physically Disaggregated Data Center"
       author: Yiying Zhang
-      conference: ACM SIGOPS Operating Systems Review 57(1): 1-9 (2023)
+      conference: ACM SIGOPS Operating Systems Review 57(1) 1-9 (2023)
       abbreviation: "OSR '23"
       tag: [serverless]
 
