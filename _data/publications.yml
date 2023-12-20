@@ -1,6 +1,13 @@
 - name: Conferences and Journals
   entries:
 
+    - link: https://arxiv.org/pdf/2109.07744.pdf
+      title: "SuperNIC: An FPGA-Based, Cloud-Oriented SmartNIC"
+      author: Will Lin*, Yizhou Shan*, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang (* equal contribution)
+      conference: to appear at the 32nd ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
+      abbreviation: "FPGA '24"
+      tag: [serverless, net, arch]
+
     - link: https://cseweb.ucsd.edu/~yiying/Mira-SOSP23.pdf
       title: "Mira: A Program-Behavior-Guided Far Memory System"
       author: Zhiyuan Guo, Zijian He, Yiying Zhang
@@ -36,19 +43,12 @@
       abbreviation: "ASPLOS '22"
       tag: [serverless, arch]
 
-    - link: https://arxiv.org/abs/2206.13444
-      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
-      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
-      conference: arXiv:2206.13444
-      abbreviation: "arXiv '22"
-      tag: [serverless, pl, cloud]
-
-    - link: https://arxiv.org/pdf/2109.07744.pdf
-      title: "SuperNIC: A Hardware-Based, Programmable, and Multi-Tenant SmartNIC"
-      author: Yizhou Shan, Will Lin, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang
-      conference: arXiv:2109.07744
-      abbreviation: "arXiv '21"
-      tag: [serverless, net, arch]
+#    - link: https://arxiv.org/abs/2206.13444
+#      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
+#      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
+#      conference: arXiv:2206.13444
+#      abbreviation: "arXiv '22"
+#      tag: [serverless, pl, cloud]
 
     - link: https://www.usenix.org/conference/atc20/presentation/tsai
       title: "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
