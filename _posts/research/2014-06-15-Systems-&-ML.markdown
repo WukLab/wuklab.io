@@ -20,16 +20,13 @@ and using ML/AI to build systems.
 <hr>
 
 <div class="row-fluid">
-<h3>Systems-ML-Co-Designed DNN Training</h3>
+<h3>Efficient Serving for API-Augmented LLMs</h3>
 <div class="span6">
 <p class="text-left">
-Traditional DNN model and training method design is agnostic to how the underlying systems will run the training.
-As a result, today's DNN training still has huge room for improvement (e.g., being more GPU-memory efficient).
-We are investigating various ways to re-design DNN models and training methods that 
-are co-optimized with the underlying system.
+Large language models are increasingly integrated with external tools and APIs like ChatGPT plugins to extend their capability beyond language-centric tasks. However, today's LLM inference systems are designed for standalone LLMs. They treat API calls as new requests, causing unnecessary recomputation of already computed contexts, which accounts for 37-40% of total model forwarding time. 
 </p>
 <p>
-Stay tuned for more information.
+We built <b>APIServe</b>, the first LLM inference framework targeting API-augmented LLMs. APIServe minimizes the GPU resource waste caused by API calls and dedicates saved memory for serving more requests. APIServe improves the overall serving throughput by 1.6x and completes 2x more requests per second compared to the state-of-the-art LLM inference systems.
 </p>
 </div>
 
