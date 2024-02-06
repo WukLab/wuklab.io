@@ -2,11 +2,11 @@
   entries:
 
     - link: https://arxiv.org/abs/2402.01869
-      title: "SAPIServe: Efficient API Support for Large-Language Model Inferencing"
+      title: "APIServe: Efficient API Support for Large-Language Model Inferencing"
       author: Reyna Abhyankar, Zijian He, Vikranth Srivatsa, Hao Zhang, Yiying Zhang
       conference: arxiv preprint arXiv:2402.01869
       abbreviation: "arxiv 2024"
-      tag: [serverless, net, arch]
+      tag: [ml]
 
     - link: https://arxiv.org/pdf/2109.07744.pdf
       title: "SuperNIC: An FPGA-Based, Cloud-Oriented SmartNIC"
