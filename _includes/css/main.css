@@ -366,7 +366,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #{{ site.color.primary }};
 }
 
 footer h3 {
