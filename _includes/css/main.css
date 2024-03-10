@@ -391,6 +391,7 @@ footer .footer-below {
     display: inline-block;
     width: 50px;
     height: 50px;
+    color: #{{ site.color.primary }};
     border: 2px solid #{{ site.color.primary }};
     border-radius: 100%;
     text-align: center;
