@@ -1,11 +1,11 @@
 # Site settings
 title: WukLab
-email: yiying@ucsd.edu
+email: wukonglab@gmail.com
 url: https://wuklab.io
 description: "WukLab: Building Next-Generation Datacenter Software and Hardware Systems."
 keywords: "computer systems, datacenters, OS, distributed systems, hardware, networking, cloud"
 skills: "Building Next-Generation Datacenter Systems"
-meta_author: Zhang Yiying
+meta_author: WukLab
 
 # Google webmaster tools
 google_verify:
