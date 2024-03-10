@@ -1,6 +1,13 @@
 - name: Conferences and Journals
   entries:
 
+    - link: https://arxiv.org/abs/2403.02661
+      title: "How to Save My Gas Fees: Understanding and Detecting Real-world Gas Issues in Solidity Programs"
+      author: Mengting He, Shihao Xia, Boqin Qin, Nobuko Yoshida, Tingting Yu, Linhai Song, Yiying Zhang
+      conference: arxiv preprint arXiv:403.02661
+      abbreviation: "arxiv 2024"
+      tag: [ml, pl]
+
     - link: https://arxiv.org/abs/2402.01869
       title: "APIServe: Efficient API Support for Large-Language Model Inferencing"
       author: Reyna Abhyankar, Zijian He, Vikranth Srivatsa, Hao Zhang, Yiying Zhang

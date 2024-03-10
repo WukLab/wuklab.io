@@ -23,6 +23,17 @@ and by building tools that can help programmers avoid or detect bugs.
 <hr>
 <hr>
 
+<div class="row-fluid">
+<h3>Empirical Study on Solidity Smart Contract Gas Issues</h3>
+<div class="span6">
+  <p class="text-left">
+The execution of smart contracts on Ethereum, a public blockchain system, incurs a fee called gas fee for its computation and data-store consumption. When programmers develop smart contracts (e.g., in the Solidity programming language), they could unknowingly write code snippets that unnecessarily cause more gas fees. These issues, or what we call gas wastes, could lead to significant monetary waste for users. Yet, there have been no systematic examination of them or effective tools for detecting them. This paper takes the initiative in helping Ethereum users reduce their gas fees in two important steps: we conduct the first empirical study on gas wastes in popular smart contracts written in Solidity by understanding their root causes and fixing strategies; we then develop a static tool, PeCatch, to effectively detect gas wastes with simple fixes in Solidity programs based on our study findings. Overall, we make seven insights and four suggestions from our gas-waste study, which could foster future tool development, language improvement, and programmer awareness, and develop eight gas-waste checkers, which pinpoint 383 previously unknown gas wastes from famous Solidity libraries.
+  </p>
+</div>
+</div>
+
+<hr>
+
 
 <div class="row-fluid">
 <h3>Disaggregation and Program Behavior: A Static-Runtime-Codesign Approach with Mira</h3>
