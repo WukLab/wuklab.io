@@ -20,18 +20,27 @@ Some of our current focuses include network for resource disaggregation and RDMA
       <hr>
 
 	<div class="row-fluid">
-	  <h3>Disaggregating Network Functionalities: A Consolidation Approach with SuperNIC</h3>
+	  <h3>Network Task Disaggregation and Consolidation with NetPool</h3>
           <div class="span6">
         	<p class="text-left">
-Prior resource disaggregation works including our own demonstrated how to disaggregate
-compute, memory, and storage resources. We, for the first
-time, demonstrate how to disaggregate network resources by
-proposing a new distributed hardware framework called <b>SuperNIC</b>. 
-Each SuperNIC connects a small set of endpoints
-and consolidates network functionalities for these endpoints.
-We prototyped SuperNIC with FPGA and demonstrate its
-performance and cost benefits with real network functions
-and customized disaggregated applications.
+Servers in today's data centers host software and hardware resources for processing network packets. Managing and executing network tasks at each end host can be costly both in
+capital cost and engineering effort. We propose to disaggregate network resources from end hosts to a separate
+network resource pool. We propose <b>NetPool</b>, a distributed SmartNIC platform that pools together at the rack scale. 
+Each SmartNIC in NetPool consolidates network functionalities from multiple endpoints by fairly sharing limited hardware resources, and it achieves its
+performance goals with an auto-scaled, highly parallel data plane and a scalable control plane. 
+		</p>
+	  </div>
+	</div>
+
+      <hr>
+
+	<div class="row-fluid">
+	  <h3>FPGA-Based Multi-Tenant SmartNIC</h3>
+          <div class="span6">
+        	<p class="text-left">
+With CPU scaling slowing down in today's data centers, more functionalities are being offloaded from the CPU to auxiliary devices. One such device is the SmartNIC, which is being increasingly adopted in data centers. In today's cloud environment, VMs on the same server can each have their own network computation (or network tasks) or workflows of network tasks to offload to a SmartNIC. These network tasks can be dynamically added/removed as VMs come and go and can be shared across VMs. Such dynamism demands that a SmartNIC not only schedules and processes packets but also manages and executes offloaded network tasks for different users. Although software solutions like an OS exist for managing software-based network tasks, such software-based SmartNICs cannot keep up with the quickly increasing data-center network speed.
+<br>
+We built a new SmartNIC platform called <b>SuperNIC</b> that allows multiple tenants to efficiently and safely offload FPGA-based network computation DAGs. For efficiency and scalability, our core idea is to group network tasks into chains that are connected and scheduled as one unit. We further propose techniques to automatically scale network task chains with different types of parallelism. Moreover, we propose a fair share mechanism that considers both fair space sharing and fair time sharing of different types of hardware resources. Our FPGA prototype of SuperNIC achieves high bandwidth, low latency performance whilst efficiently utilizing and fairly sharing resources.
 		</p>
 	  </div>
 	</div>

@@ -15,13 +15,13 @@
       abbreviation: "arxiv 2024"
       tag: [ml]
 
-    - link: https://arxiv.org/pdf/2109.07744.pdf
+    - link: https://arxiv.org/abs/2109.07744
       title: "SuperNIC: An FPGA-Based, Cloud-Oriented SmartNIC"
       author: Will Lin*, Yizhou Shan*, Ryan Kosta, Arvind Krishnamurthy, Yiying Zhang (* equal contribution)
       conference: to appear at the 32nd ACM/SIGDA International Symposium on Field-Programmable Gate Arrays
       abbreviation: "FPGA '24"
       highlight: "Best Paper Runner-Up Award"
-      tag: [serverless, net, arch]
+      tag: [net, arch]
 
     - link: https://cseweb.ucsd.edu/~yiying/Mira-SOSP23.pdf
       title: "Mira: A Program-Behavior-Guided Far Memory System"
