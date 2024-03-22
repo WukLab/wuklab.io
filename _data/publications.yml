@@ -1,6 +1,13 @@
 - name: Conferences and Journals
   entries:
 
+    - link: 
+      title: "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency"
+      author: Haoran Ma, Yifan Qiao, Shi Liu, Shan Yu, Yuanjiang Ni, Qingda Lu, Jiesheng Wu, Yiying Zhang, Miryung Kim, Harry Xu
+      conference: the 18th USENIX Symposium on Operating Systems Design and Implementation
+      abbreviation: "OSDI '24"
+      tag: [pl]
+
     - link: https://arxiv.org/abs/2403.02661
       title: "How to Save My Gas Fees: Understanding and Detecting Real-world Gas Issues in Solidity Programs"
       author: Mengting He, Shihao Xia, Boqin Qin, Nobuko Yoshida, Tingting Yu, Linhai Song, Yiying Zhang
