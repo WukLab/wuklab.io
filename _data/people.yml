@@ -24,6 +24,8 @@ currentMembers:
       - name: Ryan Kosta
         imageFile: Ryan.jpg
         link: https://ryankosta.com/
+      - name: Ryan Lee
+        imageFile: RyanLee.jpg
       #- name: Pratyush Chand
       #  imageFile: Pratyush.jpg
 
