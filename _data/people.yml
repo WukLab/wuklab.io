@@ -19,6 +19,11 @@ currentMembers:
       - name: Vikranth Srivatsa
         imageFile: Vikranth.jpeg
 
+  - name: Master Students
+    members:
+      - name: Dongming Li
+        imageFile: Dongming.jpg
+
   - name: Undergraduate Students
     members:
       - name: Ryan Kosta
