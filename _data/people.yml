@@ -18,6 +18,7 @@ currentMembers:
         imageFile: Zijian.jpg
       - name: Vikranth Srivatsa
         imageFile: Vikranth.jpeg
+        link: https://viks.me/
 
   - name: Master Students
     members:
