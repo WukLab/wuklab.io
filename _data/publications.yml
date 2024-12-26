@@ -1,5 +1,11 @@
 - name: Conferences and Journals
   entries:
+    - link: 
+      title: "Portable and High-Performance SmartNIC Programs with Alkali"
+      author: Jiaxin Lin*, Zhiyuan Guo*, Mihir Shah, Tao Ji, Yiying Zhang, Daehyeok Kim, and Aditya Akella (* equal contribution)
+      conference: the 22nd USENIX Symposium on Networked Systems Design and Implementation
+      abbreviation: "NSDI '25"
+      tag: [net]
 
     - link: 
       title: "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency"
