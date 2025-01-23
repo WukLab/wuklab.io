@@ -1,5 +1,12 @@
 - name: Conferences and Journals
   entries:
+    - link: https://arxiv.org/abs/2407.00023
+      title: Preble: Efficient Distributed Prompt Scheduling for LLM Serving
+      author: Vikranth Srivatsa*, Zijian He*, Reyna Abhyankar, Dongming Li, Yiying Zhang
+      conference: Forty-Second International Conference on Machine Learning
+      abbreviation: "ICML '25"
+      tag: [sysml]
+
     - link: 
       title: "Portable and High-Performance SmartNIC Programs with Alkali"
       author: Jiaxin Lin*, Zhiyuan Guo*, Mihir Shah, Tao Ji, Yiying Zhang, Daehyeok Kim, and Aditya Akella (* equal contribution)
@@ -23,9 +30,9 @@
 
     - link: https://arxiv.org/abs/2402.01869
       title: "APIServe: Efficient API Support for Large-Language Model Inferencing"
-      author: Reyna Abhyankar, Zijian He, Vikranth Srivatsa, Hao Zhang, Yiying Zhang
-      conference: arxiv preprint arXiv:2402.01869
-      abbreviation: "arxiv 2024"
+      author: Reyna Abhyankar*, Zijian He*, Vikranth Srivatsa, Hao Zhang, Yiying Zhang
+      conference: The Forty-First International Conference on Machine Learning @ Messe Wien Exhibition Congress Center, Vienna, Austria.
+      abbreviation: "ICML 2024"
       tag: [ml]
 
     - link: https://arxiv.org/abs/2109.07744
