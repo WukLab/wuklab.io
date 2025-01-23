@@ -1,7 +1,7 @@
 - name: Conferences and Journals
   entries:
     - link: https://arxiv.org/abs/2407.00023
-      title: Preble: Efficient Distributed Prompt Scheduling for LLM Serving
+      title: "Preble: Efficient Distributed Prompt Scheduling for LLM Serving"
       author: Vikranth Srivatsa*, Zijian He*, Reyna Abhyankar, Dongming Li, Yiying Zhang
       conference: Forty-Second International Conference on Machine Learning
       abbreviation: "ICML '25"
