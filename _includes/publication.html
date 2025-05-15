@@ -28,7 +28,7 @@
 
             {% for pub in pubs %}
             <!-- generate a publication entry from object -->
-            <p>
+            {{/*  <p>  */}}
                 <b><a target="_blank" href="{{ pub.link }}">{{ pub.title }}</a></b>
                 <br/>{{ pub.author }}
                 <br/><i>
@@ -39,7 +39,47 @@
                 {% if pub.misc %}<span>{{ pub.misc }}</span>{% endif %}
                 {% if pub.comment %}({{ pub.comment }}){% endif %}
                 {% if pub.highlight %}(<font color="red"><b>{{ pub.highlight }}</b></font>){% endif %}
-            </p>
+                <br/>
+                {% if pub.bibtex %}
+                {% assign modal_id = "bibModal-" | append: forloop.index0 %}
+                <!-- BibTeX button -->
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#{{ modal_id }}">
+                    BibTeX
+                </button>
+
+                <!-- BibTeX Modal -->
+                <div class="modal fade" id="{{ modal_id }}" tabindex="-1" role="dialog" aria-labelledby="{{ modal_id }}Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="{{ modal_id }}Label" style="color: black;"  >{{ pub.title }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <pre>{{ pub.bibtex | escape }}</pre>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if pub.slides %}
+                    <a href="{{ pub.slides }}" target="_blank"><button class="btn btn-secondary">Slides</button></a>
+                {% endif %}
+                {% if pub.talk %}
+                    <a href="{{ pub.talk }}" target="_blank"><button class="btn btn-secondary">Talk</button></a>
+                {% endif %}
+                {% if pub.blog %}
+                    <a href="{{ pub.blog }}" target="_blank"><button class="btn btn-secondary">Blog</button></a>
+                {% endif %}
+                {% if pub.slides or pub.talk or pub.bibtex or pub.blog %}
+                    <br/>
+                {%endif%}
+                <br/>
+
+            {{/*  </p>  */}}
             {% endfor %}
 
         {% endif %}

@@ -1,11 +1,31 @@
 - name: Conferences and Journals
   entries:
+    - link: "https://arxiv.org/abs/2502.08056"
+      title: "Cognify: Supercharging Gen-AI Workflows With Hierarchical Autotuning"
+      author: Zijian He*, Reyna Abhyankar*, Vikranth Srivatsa, Yiying Zhang
+      conference: 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+      abbreviation: "KDD '25"
+      tag: [ml]
+      blog: "https://mlsys.wuklab.io/posts/cognify/"
+    
     - link: https://arxiv.org/abs/2407.00023
       title: "Preble: Efficient Distributed Prompt Scheduling for LLM Serving"
       author: Vikranth Srivatsa*, Zijian He*, Reyna Abhyankar, Dongming Li, Yiying Zhang
       conference: Forty-Second International Conference on Machine Learning
-      abbreviation: "ICML '25"
+      abbreviation: "ICLR '25"
       tag: [sysml]
+      bibtex: |
+        @inproceedings{
+          srivatsa2025preble,
+          title={Preble: Efficient Distributed Prompt Scheduling for {LLM} Serving},
+          author={Vikranth Srivatsa and Zijian He and Reyna Abhyankar and Dongming Li and Yiying Zhang},
+          booktitle={The Thirteenth International Conference on Learning Representations},
+          year={2025},
+          url={https://openreview.net/forum?id=meKEKDhdnx}
+          }
+      # slides: "https://google.com"
+      # talk: "https://google.com"
+      blog: "https://mlsys.wuklab.io/posts/preble/"
 
     - link: 
       title: "Portable and High-Performance SmartNIC Programs with Alkali"
@@ -13,6 +33,19 @@
       conference: the 22nd USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '25"
       tag: [net]
+      bibtex: |
+        @inproceedings {306005,
+        author = {Jiaxin Lin and Zhiyuan Guo and Mihir Shah and Tao Ji and Yiying Zhang and Daehyeok Kim and Aditya Akella},
+        title = {Enabling Portable and {High-Performance} {SmartNIC} Programs with Alkali},
+        booktitle = {22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI 25)},
+        year = {2025},
+        isbn = {978-1-939133-46-5},
+        address = {Philadelphia, PA},
+        pages = {107--126},
+        url = {https://www.usenix.org/conference/nsdi25/presentation/lin-jiaxin},
+        publisher = {USENIX Association},
+        month = apr
+        }
 
     - link: 
       title: "DRust: Language-Guided Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency"
@@ -20,6 +53,20 @@
       conference: the 18th USENIX Symposium on Operating Systems Design and Implementation
       abbreviation: "OSDI '24"
       tag: [pl]
+      bibtex: | 
+        @inproceedings {298677,
+        author = {Haoran Ma and Yifan Qiao and Shi Liu and Shan Yu and Yuanjiang Ni and Qingda Lu and Jiesheng Wu and Yiying Zhang and Miryung Kim and Harry Xu},
+        title = {{DRust}: {Language-Guided} Distributed Shared Memory with Fine Granularity, Full Transparency, and Ultra Efficiency},
+        booktitle = {18th USENIX Symposium on Operating Systems Design and Implementation (OSDI 24)},
+        year = {2024},
+        isbn = {978-1-939133-40-3},
+        address = {Santa Clara, CA},
+        pages = {97--115},
+        url = {https://www.usenix.org/conference/osdi24/presentation/ma-haoran},
+        publisher = {USENIX Association},
+        month = jul
+        }
+
 
     - link: https://arxiv.org/abs/2403.02661
       title: "How to Save My Gas Fees: Understanding and Detecting Real-world Gas Issues in Solidity Programs"
@@ -27,13 +74,35 @@
       conference: arxiv preprint arXiv:403.02661
       abbreviation: "arxiv 2024"
       tag: [pl]
-
+      bibtex: |
+        @misc{he2024savegasfeesunderstanding,
+            title={How to Save My Gas Fees: Understanding and Detecting Real-world Gas Issues in Solidity Programs}, 
+            author={Mengting He and Shihao Xia and Boqin Qin and Nobuko Yoshida and Tingting Yu and Linhai Song and Yiying Zhang},
+            year={2024},
+            eprint={2403.02661},
+            archivePrefix={arXiv},
+            primaryClass={cs.SE},
+            url={https://arxiv.org/abs/2403.02661}, 
+        }
+  
     - link: https://arxiv.org/abs/2402.01869
-      title: "APIServe: Efficient API Support for Large-Language Model Inferencing"
+      title: "InferCept: Efficient Intercept Support for Augmented Large Language Model Inference"
       author: Reyna Abhyankar*, Zijian He*, Vikranth Srivatsa, Hao Zhang, Yiying Zhang
       conference: The Forty-First International Conference on Machine Learning @ Messe Wien Exhibition Congress Center, Vienna, Austria.
       abbreviation: "ICML 2024"
       tag: [ml]
+      bibtex: |
+        @inproceedings{
+        abhyankar2024infer,
+        title={INFERCEPT: Efficient Intercept Support for Augmented Large Language Model
+        Inference},
+          author={Reyna Abhyankar and Zijian He and Vikranth Srivatsa and Hao Zhang and Yiying Zhang},
+          booktitle={Forty-first International Conference on Machine Learning},
+          year={2024},
+          month=Jul,
+          address={Vienna, Austria},
+        }
+      blog: "https://mlsys.wuklab.io/posts/infercept/"
 
     - link: https://arxiv.org/abs/2109.07744
       title: "SuperNIC: An FPGA-Based, Cloud-Oriented SmartNIC"
@@ -42,6 +111,24 @@
       abbreviation: "FPGA '24"
       highlight: "Best Paper Runner-Up Award"
       tag: [net, arch]
+      bibtex: |
+        @inproceedings{10.1145/3626202.3637564,
+          author = {Lin, Will and Shan, Yizhou and Kosta, Ryan and Krishnamurthy, Arvind and Zhang, Yiying},
+          title = {SuperNIC: An FPGA-Based, Cloud-Oriented SmartNIC},
+          year = {2024},
+          isbn = {9798400704185},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3626202.3637564},
+          doi = {10.1145/3626202.3637564},
+          abstract = {With CPU scaling slowing down in today's data centers, more functionalities are being offloaded from the CPU to auxiliary devices. One such device is the SmartNIC, which is being increasingly adopted in data centers. In today's cloud environment, VMs on the same server can each have their own network computation (or network tasks) or workflows of network tasks to offload to a SmartNIC. These network tasks can be dynamically added/removed as VMs come and go and can be shared across VMs. Such dynamism demands that a SmartNIC not only schedules and processes packets but also manages and executes offloaded network tasks for different users. Although software solutions like an OS exist for managing software-based network tasks, such software-based SmartNICs cannot keep up with the quickly increasing data-center network speed. This paper proposes a new SmartNIC platform called SuperNIC that allows multiple tenants to efficiently and safely offload FPGA-based network computation DAGs. For efficiency and scalability, our core idea is to group network tasks into virtual chains that are dynamically mapped to different forms of physical chains depending on load and FPGA space availability. We further propose techniques to automatically scale network task chains with different types of parallelism. Moreover, we propose a fair sharing mechanism that considers both fair space sharing and fair time sharing of different types of hardware resources. Our FPGA prototype of SuperNIC achieves high bandwidth and low latency performance whilst efficiently utilizing and fairly sharing resources.},
+          booktitle = {Proceedings of the 2024 ACM/SIGDA International Symposium on Field Programmable Gate Arrays},
+          pages = {130–141},
+          numpages = {12},
+          keywords = {multi-tenancy, network programmability, smartnic},
+          location = {Monterey, CA, USA},
+          series = {FPGA '24}
+        }
 
     - link: https://cseweb.ucsd.edu/~yiying/Mira-SOSP23.pdf
       title: "Mira: A Program-Behavior-Guided Far Memory System"
@@ -49,6 +136,23 @@
       conference: Proceedings of the 29th ACM Symposium on Operating Systems Principles
       abbreviation: "SOSP '23"
       tag: [serverless, pl]
+      bibtex: |
+        @inproceedings{10.1145/3600006.3613157,
+          author = {Guo, Zhiyuan and He, Zijian and Zhang, Yiying},
+          title = {Mira: A Program-Behavior-Guided Far Memory System},
+          year = {2023},
+          isbn = {9798400702297},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3600006.3613157},
+          doi = {10.1145/3600006.3613157},
+          abstract = {Far memory, where memory accesses are non-local, has become more popular in recent years as a solution to expand memory size and avoid memory stranding. Prior far memory systems have taken two approaches: transparently swap memory pages between local and far memory, and utilizing new programming models to explicitly move fine-grained data between local and far memory. The former requires no program changes but comes with performance penalty. The latter has potentially better performance but requires significant program changes.We propose a new far-memory approach by automatically inferring program behavior and efficiently utilizing it to improve application performance. With this idea, we build Mira. Mira utilizes program analysis results, profiled execution information, and system environments together to guide code compilation and system configurations for far memory. Our evaluation shows that Mira outperforms prior swap-based and programming-model-based systems by up to 18 times.},
+          booktitle = {Proceedings of the 29th Symposium on Operating Systems Principles},
+          pages = {692–708},
+          numpages = {17},
+          location = {Koblenz, Germany},
+          series = {SOSP '23}
+        }
 
     - link: https://cseweb.ucsd.edu/~yiying/SIGOPS-OSR-Yiying-Disaggregation.pdf
       title: "Make It Real: An End-to-End Implementation of A Physically Disaggregated Data Center"
@@ -56,6 +160,25 @@
       conference: ACM SIGOPS Operating Systems Review 57(1) 1-9 (2023)
       abbreviation: "OSR '23"
       tag: [serverless]
+      bibtex: |
+        @article{10.1145/3606557.3606559,
+          author = {Zhang, Yiying},
+          title = {Make It Real: An End-to-End Implementation of A Physically Disaggregated Data Center},
+          year = {2023},
+          issue_date = {June 2023},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          volume = {57},
+          number = {1},
+          issn = {0163-5980},
+          url = {https://doi.org/10.1145/3606557.3606559},
+          doi = {10.1145/3606557.3606559},
+          abstract = {Resource disaggregation is an approach to separate different hardware resources into independent pools in a data center, so that these pools can be easily managed and their resources can be allocated in a tight but unbounded way. The past decade has seen research and practices in realizing the resource-disaggregation idea on regular servers.We advocate for a physically disaggregated data center, where disaggregated resource pools consist of hardware devices, not servers. Physical disaggregation could unlock another level of benefits in resource disaggregation, including further improved cost saving, easier maintenance and scaling, and more customization. This paper presents our efforts in building an end-to-end physically disaggregated data center, including the design and implementation of disaggregated hardware devices, networking systems for connecting these devices, operating systems for orchestrating them, and porting of traditional and cloud-computing applications to this physically disaggregated platform.},
+          journal = {SIGOPS Oper. Syst. Rev.},
+          month = jun,
+          pages = {1–9},
+          numpages = {9}
+        }
 
     - link: https://www.usenix.org/conference/nsdi23/presentation/qiao
       title: "Hermit: Low-Latency, High-Throughput, and Transparent Remote Memory via Feedback-Directed Asynchrony"
@@ -63,6 +186,19 @@
       conference: Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '23"
       tag: [serverless]
+      bibtex: |
+        @inproceedings {286471,
+          author = {Yifan Qiao and Chenxi Wang and Zhenyuan Ruan and Adam Belay and Qingda Lu and Yiying Zhang and Miryung Kim and Guoqing Harry Xu},
+          title = {Hermit: {Low-Latency}, {High-Throughput}, and Transparent Remote Memory via {Feedback-Directed} Asynchrony},
+          booktitle = {20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+          year = {2023},
+          isbn = {978-1-939133-33-5},
+          address = {Boston, MA},
+          pages = {181--198},
+          url = {https://www.usenix.org/conference/nsdi23/presentation/qiao},
+          publisher = {USENIX Association},
+          month = apr
+        }
 
     - link: https://www.usenix.org/conference/nsdi23/presentation/wang-chenxi
       title: "Canvas: Isolated and Adaptive Swapping for Multi-Applications on Remote Memory"
@@ -70,6 +206,19 @@
       conference: Proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation
       abbreviation: "NSDI '23"
       tag: [serverless]
+      bibtex: |
+        @inproceedings {285070,
+          author = {Chenxi Wang and Yifan Qiao and Haoran Ma and Shi Liu and Wenguang Chen and Ravi Netravali and Miryung Kim and Guoqing Harry Xu},
+          title = {Canvas: Isolated and Adaptive Swapping for {Multi-Applications} on Remote Memory},
+          booktitle = {20th USENIX Symposium on Networked Systems Design and Implementation (NSDI 23)},
+          year = {2023},
+          isbn = {978-1-939133-33-5},
+          address = {Boston, MA},
+          pages = {161--179},
+          url = {https://www.usenix.org/conference/nsdi23/presentation/wang-chenxi},
+          publisher = {USENIX Association},
+          month = apr
+        }
 
     - link: https://arxiv.org/pdf/2108.03492.pdf
       title: "Clio: A Hardware-Software Co-Designed Disaggregated Memory System"
@@ -77,7 +226,24 @@
       conference: Proceedings of the 27th International Conference on Architectural Support for Programming Languages and Operating Systems
       abbreviation: "ASPLOS '22"
       tag: [serverless, arch]
-
+      bibtex: |
+          @inproceedings{10.1145/3503222.3507762,
+            author = {Guo, Zhiyuan and Shan, Yizhou and Luo, Xuhao and Huang, Yutong and Zhang, Yiying},
+            title = {Clio: a hardware-software co-designed disaggregated memory system},
+            year = {2022},
+            isbn = {9781450392051},
+            publisher = {Association for Computing Machinery},
+            address = {New York, NY, USA},
+            url = {https://doi.org/10.1145/3503222.3507762},
+            doi = {10.1145/3503222.3507762},
+            abstract = {Memory disaggregation has attracted great attention recently because of its benefits in efficient memory utilization and ease of management. So far, memory disaggregation research has all taken one of two approaches: building/emulating memory nodes using regular servers or building them using raw memory devices with no processing power. The former incurs higher monetary cost and faces tail latency and scalability limitations, while the latter introduces performance, security, and management problems. Server-based memory nodes and memory nodes with no processing power are two extreme approaches. We seek a sweet spot in the middle by proposing a hardware-based memory disaggregation solution that has the right amount of processing power at memory nodes. Furthermore, we take a clean-slate approach by starting from the requirements of memory disaggregation and designing a memory-disaggregation-native system. We built Clio, a disaggregated memory system that virtualizes, protects, and manages disaggregated memory at hardware-based memory nodes. The Clio hardware includes a new virtual memory system, a customized network system, and a framework for computation offloading. In building Clio, we not only co-design OS functionalities, hardware architecture, and the network system, but also co-design compute nodes and memory nodes. Our FPGA prototype of Clio demonstrates that each memory node can achieve 100&nbsp;Gbps throughput and an end-to-end latency of 2.5&nbsp;µ s at median and 3.2&nbsp;µ s at the 99th percentile. Clio also scales much better and has orders of magnitude lower tail latency than RDMA. It has 1.1\texttimes{} to 3.4\texttimes{} energy saving compared to CPU-based and SmartNIC-based disaggregated memory systems and is 2.7\texttimes{} faster than software-based SmartNIC solutions.},
+            booktitle = {Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+            pages = {417–433},
+            numpages = {17},
+            keywords = {FPGA, Hardware- Software Co-design, Resource Disaggregation, Virtual Memory},
+            location = {Lausanne, Switzerland},
+            series = {ASPLOS '22}
+          }
 #    - link: https://arxiv.org/abs/2206.13444
 #      title: "Decomposing and Executing Serverless Applications as Resource Graphs"
 #      author: Zhiyuan Guo, Zachary Blanco, Mohammad Shahrad, Zerui Wei, Bili Dong, Jinmou Li, Ishaan Pota, Harry Xu, Yiying Zhang
@@ -91,6 +257,18 @@
       conference: 2020 USENIX Annual Technical Conference
       abbreviation: "USENIX ATC '20"
       tag: [serverless, arch]
+      bibtex: |
+        @inproceedings {254441,
+          author = {Shin-Yeh Tsai and Yizhou Shan and Yiying Zhang},
+          title = {Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated {Key-Value} Stores},
+          booktitle = {2020 USENIX Annual Technical Conference (USENIX ATC 20)},
+          year = {2020},
+          isbn = {978-1-939133-14-4},
+          pages = {33--48},
+          url = {https://www.usenix.org/conference/atc20/presentation/tsai},
+          publisher = {USENIX Association},
+          month = jul
+        }
 
     - link: https://cseweb.ucsd.edu/~yiying/RustStudy-PLDI20.pdf 
       title: "Understanding Memory and Thread Safety Practices and Issues in Real-World Rust Programs"
@@ -98,6 +276,24 @@
       conference: The ACM SIGPLAN Conference on Programming Language Design and Implementation 2020
       abbreviation: "PLDI '20"
       tag: [pl]
+      bibtex: |
+        @inproceedings{10.1145/3385412.3386036,
+          author = {Qin, Boqin and Chen, Yilun and Yu, Zeming and Song, Linhai and Zhang, Yiying},
+          title = {Understanding memory and thread safety practices and issues in real-world Rust programs},
+          year = {2020},
+          isbn = {9781450376136},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3385412.3386036},
+          doi = {10.1145/3385412.3386036},
+          abstract = {Rust is a young programming language designed for systems software development. It aims to provide safety guarantees like high-level languages and performance efficiency like low-level languages. The core design of Rust is a set of strict safety rules enforced by compile-time checking. To support more low-level controls, Rust allows programmers to bypass these compiler checks to write unsafe code.   It is important to understand what safety issues exist in real Rust programs and how Rust safety mechanisms impact programming practices. We performed the first empirical study of Rust by close, manual inspection of 850 unsafe code usages and 170 bugs in five open-source Rust projects, five widely-used Rust libraries, two online security databases, and the Rust standard library. Our study answers three important questions: how and why do programmers write unsafe code, what memory-safety issues real Rust programs have, and what concurrency bugs Rust programmers make. Our study reveals interesting real-world Rust program behaviors and new issues Rust programmers make. Based on our study results, we propose several directions of building Rust bug detectors and built two static bug detectors, both of which revealed previously unknown bugs.},
+          booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation},
+          pages = {763–779},
+          numpages = {17},
+          keywords = {Bug Study, Concurrency Bug, Memory Bug, Rust},
+          location = {London, UK},
+          series = {PLDI 2020}
+        }
 
     - link: https://cseweb.ucsd.edu/~yiying/LearnedOS-OSR19.pdf
       title: "\"Learned\" Operating Systems"
@@ -105,6 +301,25 @@
       journal: ACM SIGOPS Operating Systems Review
       misc: "53(1): 40-45 (2019)"
       tag: [ml]
+      bibtex: |
+        @article{10.1145/3352020.3352027,
+          author = {Zhang, Yiying and Huang, Yutong},
+          title = {"Learned": Operating Systems},
+          year = {2019},
+          issue_date = {July 2019},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          volume = {53},
+          number = {1},
+          issn = {0163-5980},
+          url = {https://doi.org/10.1145/3352020.3352027},
+          doi = {10.1145/3352020.3352027},
+          abstract = {With operating systems being at the core of computer systems, decades of research and engineering efforts have been put into the development of OSes. To keep pace with the speed of modern hardware and application evolvement, we argue that a different approach should be taken in future OS development. Instead of relying solely on human wisdom, we should also leverage AI and machine learning techniques to automatically "learn" how to build and tune an OS. This paper explores the opportunities and challenges of the "learned" OS approach and makes recommendation for future researchers and practitioners on building such an OS.},
+          journal = {SIGOPS Oper. Syst. Rev.},
+          month = jul,
+          pages = {40–45},
+          numpages = {6}
+        }
 
     - link: https://www.usenix.org/system/files/sec19-tsai.pdf
       title: "Pythia: Remote Oracles for the Masses"
@@ -112,6 +327,19 @@
       conference: Proceedings of the 28th USENIX Security Symposium
       abbreviation: "USENIX SEC '19"
       tag: [sec, net]
+      bibtex: |
+        @inproceedings {236326,
+          author = {Shin-Yeh Tsai and Mathias Payer and Yiying Zhang},
+          title = {Pythia: Remote Oracles for the Masses},
+          booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+          year = {2019},
+          isbn = {978-1-939133-06-9},
+          address = {Santa Clara, CA},
+          pages = {693--710},
+          url = {https://www.usenix.org/conference/usenixsecurity19/presentation/tsai},
+          publisher = {USENIX Association},
+          month = aug
+        }
 
     
     - link: http://lastweek.io/pubs/SYSTOR19-Storm.pdf
@@ -121,6 +349,24 @@
       abbreviation: "SYSTOR '19"
       highlight: "Best Paper Award"
       tag: [serverless]
+      bibtex: |
+        @inproceedings{10.1145/3319647.3325827,
+          author = {Novakovic, Stanko and Shan, Yizhou and Kolli, Aasheesh and Cui, Michael and Zhang, Yiying and Eran, Haggai and Pismenny, Boris and Liss, Liran and Wei, Michael and Tsafrir, Dan and Aguilera, Marcos},
+          title = {Storm: a fast transactional dataplane for remote data structures},
+          year = {2019},
+          isbn = {9781450367493},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3319647.3325827},
+          doi = {10.1145/3319647.3325827},
+          abstract = {RDMA technology enables a host to access the memory of a remote host without involving the remote CPU, improving the performance of distributed in-memory storage systems. Previous studies argued that RDMA suffers from scalability issues, because the NIC's limited resources are unable to simultaneously cache the state of all the concurrent network streams. These concerns led to various software-based proposals to reduce the size of this state by trading off performance.We revisit these proposals and show that they no longer apply when using newer RDMA NICs in rack-scale environments. In particular, we find that one-sided remote memory primitives lead to better performance as compared to the previously proposed unreliable datagram and kernel-based stacks. Based on this observation, we design and implement Storm, a transactional dataplane utilizing one-sided read and write-based RPC primitives. We show that Storm outperforms eRPC, FaRM, and LITE by 3.3x, 3.6x, and 17.1x, respectively, on an InfiniBand cluster with Mellanox ConnectX-4 NICs.},
+          booktitle = {Proceedings of the 12th ACM International Conference on Systems and Storage},
+          pages = {97–108},
+          numpages = {12},
+          keywords = {data structures, RPC, RDMA},
+          location = {Haifa, Israel},
+          series = {SYSTOR '19}
+        }
 
     
     - link:         https://cseweb.ucsd.edu/~yiying/GoStudy-ASPLOS19.pdf
@@ -130,6 +376,24 @@
       abbreviation: "ASPLOS '19"
       highlight:    "Rated second-most visited URL related to Golang in 2019"
       tag: [pl]
+      bibtex: |
+        @inproceedings{10.1145/3297858.3304069,
+          author = {Tu, Tengfei and Liu, Xiaoyu and Song, Linhai and Zhang, Yiying},
+          title = {Understanding Real-World Concurrency Bugs in Go},
+          year = {2019},
+          isbn = {9781450362405},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3297858.3304069},
+          doi = {10.1145/3297858.3304069},
+          abstract = {Go is a statically-typed programming language that aims to provide a simple, efficient, and safe way to build multi-threaded software. Since its creation in 2009, Go has matured and gained significant adoption in production and open-source software. Go advocates for the usage of message passing as the means of inter-thread communication and provides several new concurrency mechanisms and libraries to ease multi-threading programming. It is important to understand the implication of these new proposals and the comparison of message passing and shared memory synchronization in terms of program errors, or bugs. Unfortunately, as far as we know, there has been no study on Go's concurrency bugs. In this paper, we perform the first systematic study on concurrency bugs in real Go programs. We studied six popular Go software including Docker, Kubernetes, and gRPC. We analyzed 171 concurrency bugs in total, with more than half of them caused by non-traditional, Go-specific problems. Apart from root causes of these bugs, we also studied their fixes, performed experiments to reproduce them, and evaluated them with two publicly-available Go bug detectors. Overall, our study provides a better understanding on Go's concurrency models and can guide future researchers and practitioners in writing better, more reliable Go software and in developing debugging and diagnosis tools for Go.},
+          booktitle = {Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems},
+          pages = {865–878},
+          numpages = {14},
+          keywords = {bug study, concurrency bug, go},
+          location = {Providence, RI, USA},
+          series = {ASPLOS '19}
+        }
 
     
     - link: https://arxiv.org/abs/1901.01632
@@ -138,6 +402,16 @@
       conference: arXiv:1901.01632
       abbreviation: "arXiv '19"
       tag: [net]
+      bibtex: |
+        @misc{liu2022exploitingnetworklossdistributed,
+          title={Exploiting Network Loss for Distributed Approximate Computing with NetApprox}, 
+          author={Ke Liu and Jinmou Li and Shin-Yeh Tsai and Theophilus Benson and Yiying Zhang},
+          year={2022},
+          eprint={1901.01632},
+          archivePrefix={arXiv},
+          primaryClass={cs.NI},
+          url={https://arxiv.org/abs/1901.01632}, 
+        }
 
     - link:         https://www.usenix.org/system/files/osdi18-shan.pdf
       title:        "LegoOS: A Disaggregated, Distributed OS for Hardware Resource Disaggregation"
@@ -146,6 +420,19 @@
       abbreviation: "OSDI '18"
       highlight:    Best Paper Award
       tag: [serverless]
+      bibtex: |
+        @inproceedings {222601,
+          author = {Yizhou Shan and Yutong Huang and Yilun Chen and Yiying Zhang},
+          title = {{LegoOS}: A Disseminated, Distributed {OS} for Hardware Resource Disaggregation},
+          booktitle = {13th USENIX Symposium on Operating Systems Design and Implementation (OSDI 18)},
+          year = {2018},
+          isbn = {978-1-939133-08-3},
+          address = {Carlsbad, CA},
+          pages = {69--87},
+          url = {https://www.usenix.org/conference/osdi18/presentation/shan},
+          publisher = {USENIX Association},
+          month = oct
+        }
           
     - link:         https://cseweb.ucsd.edu/~yiying/LITE-sosp17.pdf
       title:        LITE Kernel RDMA Support for Datacenter Applications
@@ -153,6 +440,24 @@
       conference:   Proceedings of the 26th ACM Symposium on Operating Systems Principles 
       abbreviation: "SOSP '17"
       tag: [net]
+      bibtex: |
+        @inproceedings{10.1145/3132747.3132762,
+          author = {Tsai, Shin-Yeh and Zhang, Yiying},
+          title = {LITE Kernel RDMA Support for Datacenter Applications},
+          year = {2017},
+          isbn = {9781450350853},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3132747.3132762},
+          doi = {10.1145/3132747.3132762},
+          abstract = {Recently, there is an increasing interest in building data-center applications with RDMA because of its low-latency, high-throughput, and low-CPU-utilization benefits. However, RDMA is not readily suitable for datacenter applications. It lacks a flexible, high-level abstraction; its performance does not scale; and it does not provide resource sharing or flexible protection. Because of these issues, it is difficult to build RDMA-based applications and to exploit RDMA's performance benefits.To solve these issues, we built LITE, a Local Indirection TiEr for RDMA in the Linux kernel that virtualizes native RDMA into a flexible, high-level, easy-to-use abstraction and allows applications to safely share resources. Despite the widely-held belief that kernel bypassing is essential to RDMA's low-latency performance, we show that using a kernel-level indirection can achieve both flexibility and low-latency, scalable performance at the same time. To demonstrate the benefits of LITE, we developed several popular datacenter applications on LITE, including a graph engine, a MapReduce system, a Distributed Shared Memory system, and a distributed atomic logging system. These systems are easy to build and deliver good performance. For example, our implementation of PowerGraph uses only 20 lines of LITE code, while outperforming PowerGraph by 3.5x to 5.6x.},
+          booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+          pages = {306–324},
+          numpages = {19},
+          keywords = {network stack, low-latency network, indirection, RDMA},
+          location = {Shanghai, China},
+          series = {SOSP '17}
+        }
           
     - link:         https://cseweb.ucsd.edu/~yiying/hotpot-socc17.pdf
       title:        Distributed Shared Persistent Memory
@@ -161,6 +466,24 @@
       abbreviation: "SoCC '17"
       slide:        https://www.usenix.org/sites/default/files/conference/protected-files/osdi18_slides_shan.pdf
       tag: [arch]
+      bibtex: |
+        @inproceedings{10.1145/3127479.3128610,
+          author = {Shan, Yizhou and Tsai, Shin-Yeh and Zhang, Yiying},
+          title = {Distributed shared persistent memory},
+          year = {2017},
+          isbn = {9781450350280},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3127479.3128610},
+          doi = {10.1145/3127479.3128610},
+          abstract = {Next-generation non-volatile memories (NVMs) will provide byte addressability, persistence, high density, and DRAM-like performance. They have the potential to benefit many datacenter applications. However, most previous research on NVMs has focused on using them in a single machine environment. It is still unclear how to best utilize them in distributed, datacenter environments.We introduce Distributed Shared Persistent Memory (DSPM), a new framework for using persistent memories in distributed data-center environments. DSPM provides a new abstraction that allows applications to both perform traditional memory load and store instructions and to name, share, and persist their data.We built Hotpot, a kernel-level DSPM system that provides low-latency, transparent memory accesses, data persistence, data reliability, and high availability. The key ideas of Hotpot are to integrate distributed memory caching and data replication techniques and to exploit application hints. We implemented Hotpot in the Linux kernel and demonstrated its benefits by building a distributed graph engine on Hotpot and porting a NoSQL database to Hotpot. Our evaluation shows that Hotpot outperforms a recent distributed shared memory system by 1.3\texttimes{} to 3.2\texttimes{} and a recent distributed PM-based file system by 1.5\texttimes{} to 3.0\texttimes{}.},
+          booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
+          pages = {323–337},
+          numpages = {15},
+          keywords = {persistent memory, distributed shared memory},
+          location = {Santa Clara, California},
+          series = {SoCC '17}
+        }
           
      
 - name: Workshop
@@ -172,6 +495,24 @@
       conference:   to appear at the 13th ACM Asia-Pacific Workshop on Systems
       abbreviation: "APSys '22"
       tag: [net,serverless]
+      bibtex: |
+        @inproceedings{10.1145/3546591.3547527,
+          author = {Shan, Yizhou and Lin, Will and Guo, Zhiyuan and Zhang, Yiying},
+          title = {Towards a fully disaggregated and programmable data center},
+          year = {2022},
+          isbn = {9781450394413},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3546591.3547527},
+          doi = {10.1145/3546591.3547527},
+          abstract = {Today, we are seeing two trends in the data center. On the one hand, applications are becoming more fine-grained, driven by the recent trend of serverless computing and microservices. On the other hand, data-center hardware is becoming more heterogeneous and customized to different computing needs. Because of these trends and for better manageability, several major data centers are moving towards a disaggregated architecture, where different hardware resources like storage and accelerators are organized as independent, network-attached pools. However, data centers today are still server-centric and relies heavily on traditional CPU-based servers.In this paper, we take a step further and explore the possibility of building a fully disaggregated data center, where every type of resource is disaggregated. Moreover, we explore the requirements and implications of making each of the disaggregated device programmable. We present guidelines and initial solutions for data center designers to navigate design trade-offs. Specifically, we decompose the overarching problem into four sub-problems and propose solutions to each of them. At the top layer, we explore two types of abstractions and propose a disaggregation-native design methodology. At the bottom layer, we describe the hardware and key features required to build disaggregated devices as well as the networking infrastructure to connect them. To bridge these two layers, we propose a static-time component that compiles different user programs into heterogeneous disaggregated devices through a disaggregation-native intermediate representation. We also propose a run-time system that manages hardware resources and schedules compiler generated execution units. We hope our proposal can pave the way for future disaggregated and programmable data center deployment.},
+          booktitle = {Proceedings of the 13th ACM SIGOPS Asia-Pacific Workshop on Systems},
+          pages = {18–28},
+          numpages = {11},
+          keywords = {data-center hardware architecture, data-center network, resource disaggregation},
+          location = {Virtual Event, Singapore},
+          series = {APSys '22}
+        }
 
     - link:         https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-zhang.pdf
       title:        "User-Defined Cloud"
@@ -179,6 +520,24 @@
       conference:   The 18th Workshop on Hot Topics in Operating Systems
       abbreviation: "HotOS '21"
       tag: [net,cloud]
+      bibtex: |
+        @inproceedings{10.1145/3458336.3465304,
+          author = {Zhang, Yiying and Sani, Ardalan Amiri and Xu, Guoqing Harry},
+          title = {User-defined cloud},
+          year = {2021},
+          isbn = {9781450384384},
+          publisher = {Association for Computing Machinery},
+          address = {New York, NY, USA},
+          url = {https://doi.org/10.1145/3458336.3465304},
+          doi = {10.1145/3458336.3465304},
+          abstract = {Since its creation, cloud computing has always taken a provider-dictated approach, where cloud providers define and manage the cloud to accommodate the user needs they deem important. We propose "User-Defined Cloud", or UDC, a new cloud scheme that allows users to define their own "clouds", by defining hardware resource needs, system software features, and security requirements of their applications, and to do so without the need to build or manage low-level systems.},
+          booktitle = {Proceedings of the Workshop on Hot Topics in Operating Systems},
+          pages = {33–40},
+          numpages = {8},
+          keywords = {cloud computing, system customization, user-defined cloud},
+          location = {Ann Arbor, Michigan},
+          series = {HotOS '21}
+        }
 
     - link:         https://www.usenix.org/conference/atc20/presentation/tsai
       title:        "Disaggregating Persistent Memory and Controlling Them Remotely: An Exploration of Passive Disaggregated Key-Value Stores"
@@ -193,6 +552,17 @@
       conference:   11th USENIX Workshop on Hot Topics in Cloud Computing 
       abbreviation: "HotCloud '19"
       tag: [sec, net]
+      bibtex: |
+        @inproceedings {234847,
+          author = {Shin-Yeh Tsai and Yiying Zhang},
+          title = {A {Double-Edged} Sword: Security Threats and Opportunities in {One-Sided} Network Communication},
+          booktitle = {11th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud 19)},
+          year = {2019},
+          address = {Renton, WA},
+          url = {https://www.usenix.org/conference/hotcloud19/presentation/tsai},
+          publisher = {USENIX Association},
+          month = jul
+        }
       
     - link:         http://lastweek.io/pubs/NVMW19-DPM.pdf
       title:        Challenges in Building and Deploying Disaggregated Persistent Memory
