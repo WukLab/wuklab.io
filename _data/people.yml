@@ -22,18 +22,10 @@ currentMembers:
 
   - name: Master Students
     members:
-      - name: Dongming Li
-        imageFile: Dongming.jpg
-
-  - name: Undergraduate Students
-    members:
-      - name: Ryan Kosta
-        imageFile: Ryan.jpg
-        link: https://ryankosta.com/
-      - name: Ryan Lee
-        imageFile: RyanLee.jpg
-      #- name: Pratyush Chand
-      #  imageFile: Pratyush.jpg
+      - name: Pu Guo
+        imageFile: Pu.jpg
+      - name: Qi Qi
+        imageFile: Qi.jpg
 
 alumni:
   - name: PhD
@@ -49,8 +41,12 @@ alumni:
 
   - name: Master
     members:
+      - name: Dongming Li
+        gradYear: 2025
+        affiliation: Bytedance
       - name: Zac Blanco
         gradYear: 2023
+        affiliation: IBM
       - name: Bili Dong
         gradYear: 2022
         affiliation: Google
@@ -78,3 +74,11 @@ alumni:
       - name: Linzhe Li
         gradYear: 2016
         affiliation: Qualcomm
+
+  - name: Undergraduate
+    members:
+      - name: Ryan Kosta
+        gradYear: 2025
+        link: https://ryankosta.com/
+      - name: Ryan Lee
+        gradYear: 2024
