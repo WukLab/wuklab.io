@@ -1,5 +1,22 @@
 - name: Conferences and Journals
   entries:
+    - link: https://arxiv.org/abs/2506.00384
+      title: "Deep-Learning-Driven Prefetching for Far Memory"
+      author: Yutong Huang, Zhiyuan Guo, Yiying Zhang
+      conference: arxiv preprint arXiv:2506.00384
+      abbreviation: "arxiv 2025"
+      tag: [net, sysml]
+      bibtex: |
+        @misc{huang2025deeplearningdrivenprefetchingfarmemory,
+          title={Deep-Learning-Driven Prefetching for Far Memory},
+          author={Yutong Huang and Zhiyuan Guo and Yiying Zhang},
+          year={2025},
+          eprint={2506.00384},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2506.00384},
+        }
+
     - link: "https://arxiv.org/abs/2502.08056"
       title: "Cognify: Supercharging Gen-AI Workflows With Hierarchical Autotuning"
       author: Zijian He*, Reyna Abhyankar*, Vikranth Srivatsa, Yiying Zhang
