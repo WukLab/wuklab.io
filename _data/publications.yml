@@ -16,6 +16,7 @@
           primaryClass={cs.LG},
           url={https://arxiv.org/abs/2506.00384},
         }
+      blog: "https://mlsys.wuklab.io/posts/farsight/"
 
     - link: "https://arxiv.org/abs/2502.08056"
       title: "Cognify: Supercharging Gen-AI Workflows With Hierarchical Autotuning"
