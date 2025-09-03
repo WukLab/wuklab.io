@@ -1,5 +1,10 @@
 - name: Conferences and Journals
   entries:
+    - link: https://wuklab.io/files/ZhiyuanGuo_Thesis.pdf
+      title: "Building End-to-end Disaggregation Stack via Cross Layer Co-Design"
+      author: Zhiyuan Guo
+      conference: PhD Thesis
+  
     - link: https://arxiv.org/abs/2506.00384
       title: "Deep-Learning-Driven Prefetching for Far Memory"
       author: Yutong Huang, Zhiyuan Guo, Yiying Zhang
