@@ -29,7 +29,7 @@
     
     - link: https://neurips.cc/virtual/2025/loc/san-diego/126694
       title: "Demystifying Delays in Reasoning: A Pilot Temporal and Token Analysis of Reasoning Systems"
-      author: Reyna Abhyankar, Qi Qi, Yiying Zhang
+      author: Qi Qi, Reyna Abhyankar, Yiying Zhang
       conference: Workshop on Efficient Reasoning at NeurIPS, 2025
       abbreviation: "NeurIPS '25 Workshop"
       tag: [mlsys]
@@ -37,7 +37,7 @@
         @inproceedings{
           abhyankar2025demystifying,
           title={Demystifying Delays in Reasoning: A Pilot Temporal and Token Analysis of Reasoning Systems},
-          author={Reyna Abhyankar and Qi Qi and Yiying Zhang},
+          author={Qi Qi and Reyna Abhyankar and Yiying Zhang},
           booktitle={NeurIPS 2025 Workshop on Efficient Reasoning},
           year={2025},
           month={Dec},
