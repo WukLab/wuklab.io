@@ -1,5 +1,66 @@
 - name: Conferences and Journals
   entries:
+    - link: "https://arxiv.org/abs/2506.16042"
+      title: "OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents "
+      author:  Reyna Abhyankar*, Qi Qi*, Yiying Zhang
+      conference: 9th Annual Conference on Machine Learning and Systems 2026
+      abbreviation: "MLSys '26"
+      tag: [mlsys]
+      bibtex: |
+        @inproceedings{abhyankar2026osworld, 
+          author = "Abhyankar, Reyna and Qi, Qi and Zhang, Yiying", 
+          title = "OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents", booktitle = "Proceedings of the 9th Annual Conference on Machine Learning and Systems (MLSys)", 
+          year = "2026" 
+        }
+    
+    - link: "https://arxiv.org/abs/2511.13841"
+      title: "Beat the long tail: Distribution-Aware Speculative Decoding for RL Training"
+      author: Zelei Shao*, Vikranth Srivatsa*, Sanjana Srivastava, Qingyang Wu, Alpay Ariyak, Xiaoxia Wu, Ameen Patel, Jue Wang, Percy Liang, Tri Dao, Ce Zhang, Yiying Zhang, Ben Athiwaratkun, Chenfeng Xu, Junxiong Wang
+      conference: 9th Annual Conference on Machine Learning and Systems 2026
+      abbreviation: "MLSys '26"
+      tag: [mlsys]
+      bibtex: |
+        @inproceedings{shao2026beat, 
+        author = "Shao, Zelei and Srivatsa, Vikranth and Srivastava, Sanjana and Wu, Qingyang and Ariyak, Alpay and Wu, Xiaoxia and Patel, Ameen and Wang, Jue and Liang, Percy and Dao, Tri and Zhang, Ce and Zhang, Yiying and Athiwaratkun, Ben and Xu, Chenfeng and Wang, Junxiong", 
+        title = "Beat the long tail: Distribution-Aware Speculative Decoding for RL Training", 
+        booktitle = "Proceedings of the 9th Annual Conference on Machine Learning and Systems (MLSys)", 
+        year = "2026" 
+        }
+    
+    - link: https://neurips.cc/virtual/2025/loc/san-diego/126694
+      title: Demystifying Delays in Reasoning: A Pilot Temporal and Token Analysis of Reasoning Systems
+      author: Reyna Abhyankar, Qi Qi, Yiying Zhang
+      conference: Workshop on Efficient Reasoning at NeurIPS, 2025
+      abbreviation: "NeurIPS '25 Workshop"
+      tag: [mlsys]
+      bibtex: | 
+        @inproceedings{
+          abhyankar2025demystifying,
+          title={Demystifying Delays in Reasoning},
+          author={Reyna Abhyankar and Qi Qi and Yiying Zhang},
+          booktitle={NeurIPS 2025 Workshop on Efficient Reasoning},
+          year={2025},
+          month={Dec},
+          address={Vancouver, Canada},
+        }
+    
+    - link: 
+      title: "FarSight: Deep-Learning-Driven Prefetching for Far Memory"
+      author: Yutong Huang, Zhiyuan Guo, Yiying Zhang
+      conference: Workshop on Efficient Reasoning at NeurIPS, 2025
+      abbreviation: "NeurIPS '25 Workshop"
+      tag: [mlsys]
+      bibtex: |
+         @inproceedings{
+            huang2025farsight,
+            title={FarSight: Deep-Learning-Driven Prefetching for Far Memory},
+            author={Yutong Huang and Zhiyuan Guo and Yiying Zhang},
+            booktitle={NeurIPS 2025 Workshop on Machine Learning for Systems},
+            year={2025},
+            month=Dec,
+            address={Vancouver, Canada},
+          }
+
     - link: https://wuklab.io/files/ZhiyuanGuo_Thesis.pdf
       title: "Building End-to-end Disaggregation Stack via Cross Layer Co-Design"
       author: Zhiyuan Guo
