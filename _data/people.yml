@@ -7,30 +7,29 @@ currentMembers:
 
   - name: Ph.D Students
     members:
-      - name: Zhiyuan Guo
-        imageFile: Zhiyuan.jpg
-        link: https://depctg.github.io/
       - name: Yutong Huang
         imageFile: Yutong.jpg
         link: https://yutonghuang.me/
-      - name: Reyna Abhyankar
-        imageFile: Reyna.png
       - name: Zijian He
         imageFile: Zijian.jpg
       - name: Vikranth Srivatsa
         imageFile: Vikranth.jpeg
         link: https://viks.me/
-
-  - name: Master Students
-    members:
-      - name: Pu Guo
-        imageFile: Pu.jpg
-      - name: Qi Qi
-        imageFile: Qi.jpg
+      - name: Ziren Wang
+        imageFile: ziren.jpg
+        link: https://wazrrr.github.io
 
 alumni:
   - name: PhD
     members:
+      - name: Zhiyuan Guo
+        gradYear: 2025
+        affiliation: PostDoc @ Cornell
+        link: https://depctg.github.io/
+      - name: Reyna Abhyankar
+        gradYear: 2025
+        affiliation: Research Scientist @ Together AI
+        link: https://reyna-abhyankar.github.io/
       - name: Yizhou Shan
         affiliation: Research Scientist @ Huawei Cloud
         gradYear: 2022
@@ -42,12 +41,18 @@ alumni:
 
   - name: Master
     members:
+      - name: Pu Guo
+        gradYear: 2025
+        affiliation: PhD @ UNC Chapel Hill
+      - name: Qi Qi
+        gradYear: 2025
+        affiliation: PhD @ UMass Amherst
       - name: Dongming Li
         gradYear: 2025
-        affiliation: Bytedance
+        affiliation: Tesla
       - name: Zac Blanco
         gradYear: 2023
-        affiliation: IBM
+        affiliation: Databricks
       - name: Bili Dong
         gradYear: 2022
         affiliation: Google
@@ -81,5 +86,6 @@ alumni:
       - name: Ryan Kosta
         gradYear: 2025
         link: https://ryankosta.com/
+        affiliation: PhD @ UCSD
       - name: Ryan Lee
         gradYear: 2024
