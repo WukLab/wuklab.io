@@ -31,7 +31,7 @@ alumni:
         affiliation: Research Scientist @ Together AI
         link: https://reyna-abhyankar.github.io/
       - name: Yizhou Shan
-        affiliation: Research Scientist @ Huawei Cloud
+        affiliation: Research Scientist @ Huawei Cloud => Research Scientist @ Bytedance Seed
         gradYear: 2022
         link: http://lastweek.io/
       - name: Shin-Yeh Tsai
