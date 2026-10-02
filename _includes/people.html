@@ -59,7 +59,7 @@
         {% for type in site.data.people.alumni%}
         {% for person in type.members %}
             <div class="col-12">
-                <span class="my-2">{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %} ({{ type.name }} {{ person.gradYear }}), {{ person.affiliation }}</span>
+                <span class="my-2">{% if person.link %} <a target="_blank" href="{{ person.link }}" class="stretched-link">{% endif %}{{ person.name }}{% if person.link %}</a>{% endif %}{% if person.gradYear %} ({{ type.name }} {{ person.gradYear }}){% endif %}, {{ person.affiliation }}</span>
             </div>
         {% endfor %}
         {% endfor %}

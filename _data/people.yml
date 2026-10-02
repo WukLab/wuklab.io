@@ -26,10 +26,6 @@ alumni:
         gradYear: 2025
         affiliation: PostDoc @ Cornell
         link: https://depctg.github.io/
-      - name: Reyna Abhyankar
-        gradYear: 2025
-        affiliation: Research Scientist @ Together AI
-        link: https://reyna-abhyankar.github.io/
       - name: Yizhou Shan
         affiliation: Research Scientist @ Huawei Cloud => Research Scientist @ Bytedance Seed
         gradYear: 2022
@@ -39,19 +35,25 @@ alumni:
         affiliation: Research Scientist @ Meta => Engineer @ Databricks
         link: https://shinyehtsai.github.io/
 
+  - name: Other
+    members:
+      - name: Reyna Abhyankar
+        affiliation: Research Scientist @ Together AI
+        link: https://reyna-abhyankar.github.io/
+
   - name: Master
     members:
       - name: Alex Asch
-        gradYear: 2025
+        gradYear: 2026
         affiliation: SWE @ Radar
       - name: Hansin Patwa
-        gradYear: 2025
+        gradYear: 2026
         affiliation: AI Engineer @ Velvet
       - name: Pu Guo
-        gradYear: 2025
+        gradYear: 2026
         affiliation: PhD @ UNC Chapel Hill
       - name: Qi Qi
-        gradYear: 2025
+        gradYear: 2026
         affiliation: PhD @ UMass Amherst
       - name: Dongming Li
         gradYear: 2025
