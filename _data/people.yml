@@ -41,7 +41,12 @@ alumni:
 
   - name: Master
     members:
-      - name: Alex 
+      - name: Alex Asch
+        gradYear: 2025
+        affiliation: SWE @ Radar
+      - name: Hansin Patwa
+        gradYear: 2025
+        affiliation: AI Engineer @ Velvet
       - name: Pu Guo
         gradYear: 2025
         affiliation: PhD @ UNC Chapel Hill
